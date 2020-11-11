@@ -1,0 +1,40 @@
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  .pr {
+    position: relative;
+  }
+  body,
+  ol,
+  ul,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  th,
+  td,
+  dl,
+  dd,
+  form,
+  fieldset,
+  legend,
+  input,
+  textarea,
+  select {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background: #FFFFFF;
+    -webkit-text-size-adjust: 100%;
+    font-family: "Microsoft YaHei", "PingFang SC";
+    overflow-x: hidden;
+  }
+  input:focus {
+    outline: none;
+  }

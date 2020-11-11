@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width; initial-scale=1.0,maximum-scale=1.0,user-scalable=0"
+    />
+    <title></title>
+    
+    <link rel="stylesheet" href="css/myOrders.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/projectDetail.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <style>
+    .swiper-container {
+    width: 100%;
+    height: 100%;
+}  
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    </style>
+    <!-- <link rel="stylesheet/less" type="text/css" href="less.less" />
+    <script type="text/javascript">
+      less = {
+        env: "development",
+        async: false,
+        fileAsync: false,
+        poll: 1000,
+        functions: {},
+        dumpLineNumbers: "comments",
+        relativeUrls: false,
+        rootpath: ":/a.com/",
+      };
+    </script>
+    <script src="./dist/less.min.js"></script> -->
+  </head>
+
+  <body>
+    <div class="login">
+      <header class="login-header">
+        
+        <div class="login-img"><img class="login-logo" onclick="handleGoto('ourRange')"  src="./img/Asset 1@4x-8 2@4x.png" /></div>
+        <div class="login-menus">
+          <span class="login-menu" onclick="handleGoto('ourRange')" >Our range</span>
+          <span class="login-menu" onclick="handleGoto('onlineStore')" >Online store</span>
+          <span class="login-menu" onclick="handleGoto('ourProjects')" >Projects</span>
+          <span class="login-menu" onclick="handleGoto('about')" >About</span>
+          <span class="login-menu" onclick="handleGoto('contact')" >Contact</span>
+          <span class="login-menu" onclick="handleGoto('blog')" >Blog</span>
+          <span class="login-menu" onclick="handleGoto('downloadBrochure')" >Download brochure</span>
+        </div>
+        <div class="login-icons">
+          <img src="./img/ICON/Group 13.png" class="login-icon" />
+          <img src="./img/ICON/Group 12.png" class="login-icon" />
+          <img src="./img/ICON/Group 11.png" class="login-icon" />
+        </div>
+      </header>
+     
+      </div>
+      
+      <div class="myOrders-content">
+       <div class="myOrders-content-left">
+          <label >Dashboard</label>
+          <span>
+            My account
+          </span>
+          <span class="myOrders-content-selectd">
+            My orders
+          </span>
+          <span>
+            Unpaid
+          </span>
+          <span>
+           Order placed
+          </span>
+          <span>
+            Processing
+          </span>
+
+          <span>
+           Completed
+          </span>
+
+          <span>
+            Address book
+          </span>
+
+          <span>
+            Security
+          </span>
+       </div>
+       <div class="myOrders-content-right">
+        <label>
+          My orders
+        </label>
+        <table>
+          <tr >
+            <td colspan="2">Order number</td>
+            <td colspan="2">Date of order</td>
+            <td  colspan="6">Orderd Items</td>
+            <td colspan="2">Total</td>
+            <td colspan="4"> Order Status</td>
+          </tr>
+          <tr class="myOrders-content-td">
+            <td colspan="2"><a href="javascript:void">ID0000001</a></td>
+            <td colspan="2">09/02/2020</td>
+            <td colspan="6"><img src='./img/图片/Bitmap2@4x-min.jpg'/><img src='./img/图片/Bitmap2@4x-min.jpg'/><img src='./img/图片/Bitmap2@4x-min.jpg'/><img src='./img/图片/Bitmap2@4x-min.jpg'/></td>
+            <td colspan="2">$1111</td>
+            <td colspan="4"><button class="myOrders-content-cancel">Cancel</button><button class="myOrders-content-pay"> Pay now</button></td>
+          </tr>
+          <tr class="myOrders-content-td">
+            <td colspan="2"><a href="javascript:void">ID0000001</a></td>
+            <td colspan="2">09/02/2020</td>
+            <td colspan="6"><img src='./img/图片/Bitmap2@4x-min.jpg'/><img src='./img/图片/Bitmap2@4x-min.jpg'/><img src='./img/图片/Bitmap2@4x-min.jpg'/><img src='./img/图片/Bitmap2@4x-min.jpg'/></td>
+            <td colspan="2">$1111</td>
+            <td colspan="4"><button class="myOrders-content-cancel">Cancel</button><button class="myOrders-content-pay"> Pay now</button></td>
+          </tr> <tr class="myOrders-content-td">
+            <td colspan="2"><a href="javascript:void">ID0000001</a></td>
+            <td colspan="2">09/02/2020</td>
+            <td colspan="6"><img src='./img/图片/Bitmap2@4x-min.jpg'/><img src='./img/图片/Bitmap2@4x-min.jpg'/><img src='./img/图片/Bitmap2@4x-min.jpg'/><img src='./img/图片/Bitmap2@4x-min.jpg'/></td>
+            <td colspan="2">$1111</td>
+            <td colspan="4"><button class="myOrders-content-cancel">Cancel</button><button class="myOrders-content-pay"> Pay now</button></td>
+          </tr>
+
+
+        </table>
+       </div>
+  </div>
+  
+  </div>
+      <div class="login-bottom">
+        <img class="login-logo2" src="./img/Asset 1@4x-8 3@4x.png" />
+        <span class="login-bottom-dec wow fadeInDown animated">
+          Copyright Merit Stone 2020. All Rights Reserved.
+        </span>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/style.js"></script>
+
+     <script type="text/javascript">
+      function handleGoto(path) {
+        window.location.href = `./${path}.html`;
+      }
+    </script>
+  </body>
+
+  <script src="./js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>        
+
+window.onscroll = function () {
+       let a = document.documentElement.scrollTop || document.body.scrollTop;//滚动条y轴上的距离
+       let b = document.documentElement.clientHeight || document.body.clientHeight;//可视区域的高度
+       let c = document.documentElement.scrollHeight || document.body.scrollHeight;//可视化的高度与溢出的距离（总高度）
+       if(a> 108){
+      document.getElementsByClassName('login-header')[0].style.bottomBorder = '1px solid #cdcdcd'
+      document.getElementsByClassName('login-header')[0].style.boxShadow = '0 0 4px  #808080'
+      
+       }else{
+        document.getElementsByClassName('login-header')[0].style.border = 'none'
+      document.getElementsByClassName('login-header')[0].style.boxShadow = 'none'
+       }
+    }
+    var mySwiper = new Swiper ('.swiper-container', {
+      direction: 'horizontal',
+      loop: false,
+      
+      // 如果需要分页器
+      pagination: '.swiper-pagination',
+      
+      // pagination: {
+      //   el: '.swiper-pagination',
+      //   type: 'fraction',
+      // },
+      // 如果需要前进后退按钮
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      paginationType: 'fraction',
+      // 如果需要滚动条
+      scrollbar: '.swiper-scrollbar',
+      // pagination: {
+      //   el: '.swiper-pagination',
+      //   type: 'fraction',
+      // },
+      // navigation: {
+      //   nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev',
+      // },
+    })        
+
+    function closeModal(){
+
+      document.getElementsByClassName("projectDetail-modal")[0].style.display =
+          "none";
+    }
+    function openModal(){
+
+      document.getElementsByClassName("projectDetail-modal")[0].style.left =
+          "0";
+      document.getElementsByClassName("projectDetail-modal")[0].style.display =
+          "flex";
+
+    }
+    </script>
+</html>

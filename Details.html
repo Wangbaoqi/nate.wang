@@ -1,0 +1,474 @@
+<!--
+ * @Description:: 请补充填写
+ * @Version: 请配置版本号
+ * @Author: xiaobai
+ * @Date: 2020-10-23 19:00:17
+ * @LastEditors: xiaobai
+ * @LastEditTime: 2020-10-24 19:32:12
+ * @FilePath: /shop/Details.html
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width; initial-scale=1.0,maximum-scale=1.0,user-scalable=0"
+    />
+    <title></title>
+    <link rel="stylesheet" href="css/myOrders.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/projectDetail.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <style>
+      .myOrders-title{
+        width: 100%;
+        padding:5% 0 5% 0;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .text-center{
+        text-align: center;
+      }
+      .pt-20{
+        padding-top: 20px!important;
+      }
+      .pt-0{
+        padding-top: 0;
+      }
+      ul li{
+        list-style: none;
+      }
+      .li_img{
+        width: 50px;
+        height: 50px;
+        margin: 10px 0;
+        border-radius: 50px;
+      }
+      .flex{
+        display: flex;
+      }
+      .flex > .box{
+        width: 100%;
+      }
+      .img_box{
+        position: relative;
+        padding: 0 30px;
+        margin: 0 20px;
+      }
+      .prve_box{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        left: 0;
+        top: 270px;
+        z-index: 99;
+      }
+      .next_box{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        right: 0;
+        top: 270px;
+        margin-right: -8%;
+        z-index: 99;
+      }
+      .prve_box >img,.next_box > img{
+        width: 100%;
+      }
+      .img_box_a{
+        height: 600px;
+        width: 110%;
+        overflow: hidden;
+        position: relative;
+      }
+      .img_box_a .img{
+        transition: 1s all ease-out;
+        margin-top: 0;
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        left: 0;
+      }
+      .img_ul li img{
+        border: 2px solid #ffffff;
+      }
+      .img_ul li.active img{
+        border: 2px solid #e6e6e6;
+      }
+      .img1{
+        top: 0;
+      }
+      .img2{
+        top: 600px;
+      }
+      .img3{
+        top: 1200px;
+      }
+      .img4{
+        top: 1800px;
+      }
+      .orange_text{
+        color: #c0b572;
+      }
+      .title{
+        font-size: 18px;
+        margin: 10px 0 ;
+        font-weight: bold;
+      }
+      .jianshao{
+        font-weight: 300;
+        margin: 30px 0;
+      }
+      .contact_us{
+        font-weight: 300;
+      }
+      .prace{
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 40px;
+      }
+      .select_box{
+        border: 1px solid #d9d9d9;
+        width: 250px;
+        padding: 5px 10px;
+        margin-top: 50px;
+      }
+      .select{
+        border: 0;
+        width: 200px;
+        background: transparent;
+        outline: none;
+        padding: 5px 10px;
+      }
+      .group{
+        display: flex;
+        border: 1px solid #d9d9d9;
+        width: 108px;
+        margin-top: 30px;
+      }
+      .group_jian,.group_add,.group_input{
+        outline: none;
+        border: 0;
+        display: block;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        background: #ffffff;
+      }
+      .add_btn{
+        outline: none;
+        border: 0;
+        display: block;
+        margin-top: 30px;
+        height: 38px;
+        width: 164px;
+        line-height: 38px;
+        border: 1px solid #c0b572;
+        background: #c0b572;
+        color: #ffffff;
+      }
+      .right_access{
+        float: right;
+        height: 14px;
+        position: absolute;
+        right: 10px;
+        top: 22px;
+      }
+      .contact-button{
+        width: 270px;
+        margin-left: 0;
+        margin-top: 30px;
+      }
+      .contact-button::before{
+        width: 270px;
+      }
+      .bg-grey{
+        background: #EEEEEE;
+        padding: 50px;
+      }
+      .bg-white{
+        background: #ffffff;
+        padding: 50px;
+      }
+      .title{
+        font-size: 20px;
+        color: #333333;
+        font-weight: bold;
+        border-bottom: #c0b572 2px solid;
+        display: inline-block;
+        width: 40px;
+      }
+      .flex .box.left{
+        min-width:110px;
+        width: 110px;
+      }
+      .card_name{
+        font-size: 20px;
+        margin: 20px 0;
+      }
+      .item{
+        margin: 15px 0;
+      }
+
+.details-button {
+  width: 270px;
+  height: 46px;
+  background: #f8f8f8;
+  border: 1px solid #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 15px;
+  font-family: FuturaBT-Book, FuturaBT;
+  font-weight: normal;
+  color: #333333;
+  line-height: 24px;
+  letter-spacing: 1px;
+  transform: 0.5s;
+  transition: 0.5s;
+  z-index: 2;
+  margin-top: 10%;
+}
+.details-button::before {
+  content: "Request a sample";
+  position: absolute;
+  width: 270px;
+  height: 46px;
+  background: #f8f8f8;
+  border: 1px solid #333333;
+  display: flex;
+  left: 4px;
+  top: 4px;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+    </style>
+
+  </head>
+
+  <body>
+    <div class="login">
+      <header class="login-header">
+       
+        <div class="login-img"><img class="login-logo" onclick="handleGoto('ourRange')"  src="./img/Asset 1@4x-8 2@4x.png" /></div>
+        <div class="login-menus">
+          <span class="login-menu" onclick="handleGoto('ourRange')" >Our range</span>
+          <span class="login-menu" onclick="handleGoto('onlineStore')" >Online store</span>
+          <span class="login-menu" onclick="handleGoto('ourProjects')" >Projects</span>
+          <span class="login-menu" onclick="handleGoto('about')" >About</span>
+          <span class="login-menu" onclick="handleGoto('contact')" >Contact</span>
+          <span class="login-menu" onclick="handleGoto('blog')" >Blog</span>
+          <span class="login-menu" onclick="handleGoto('downloadBrochure')" >Download brochure</span>
+        </div>
+        <div class="login-icons">
+          <img src="./img/ICON/Group 13.png" class="login-icon" />
+          <img src="./img/ICON/Group 12.png" class="login-icon" />
+          <img src="./img/ICON/Group 11.png" class="login-icon" />
+        </div>
+      </header>
+     
+      </div>
+      <div class="myOrders-title fadeInDown animated">
+        <div style="padding-left: 100px;">
+          marble & granite slab - <span style="color:#c0b572">blanco Carrara BC02</span>
+        </div>
+      </div>
+      <div class="myOrders-content pt-0">
+       <div class="myOrders-content-left " style="width: 50%;min-width: 500px;">
+         <div class="flex">
+           <div class="box" style="width: 80px;">
+             <ul class="img_ul">
+               <li class="active li_1" data-id="1">
+                 <img src="./img/图片/Bitmap@4x 2_1.png" class="li_img">
+               </li>
+               <li class="li_2" data-id="2">
+                <img src="./img/图片/Bitmap@4x 2_2.png" class="li_img">
+              </li>
+              <li class="li_3" data-id="3">
+                <img src="./img/图片/Bitmap@4x 3_1.png" class="li_img">
+              </li>
+              <li class="li_4" data-id="4">
+                <img src="./img/图片/Bitmap@4x 5.png" class="li_img">
+              </li>
+             </ul>
+           </div>
+           <div class="box img_box">
+             <div class="prve_box">
+               <img src="./img/Group@4x.png" alt="">
+             </div>
+             <div class="img_box_a">
+               <img class="img img1 active" data-id="1" src="./img/图片/modern-luxury-hotel-and-office-reception-and-loung-SAZ55QT@4x.png">
+               <img class="img img2" data-id="2" src="./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 2_1.png">
+               <img class="img img3" data-id="3" src="./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 2_2.png">
+               <img class="img img4" data-id="4" src="./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 2_3.png">
+             </div>
+             <div class="next_box">
+               <img src="./img/Group@4x 2.png">
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="myOrders-content-right" style="width: 50%; min-width: 500px;">
+          <p class="orange_text wow fadeInDown animated">Classtone(marble styles)</p>
+          <p class="title wow fadeInDown animated">Amazonico</p>
+          <p class="jianshao wow fadeInDown animated">Inspired by real Carrara marbles from ltaly, Blanco Carrara is comprised of natural aesthetic elements with a more subtle portrayal of the marble veining. Exclusive to Neolith,there is quite literally no natural stone like it.</p>
+          <p class="contact_us wow fadeInDown animated">*Image of stone are indicative only.  Please contact us to view stone in person.</p>
+          <p class="prace wow fadeInDown animated">$100.00</p>
+          <div class="select_box wow fadeInDown animated">
+            <span>Size:</span>
+            <select class="select">
+              <option value="1">3200 x 1500 x6mm</option>
+            </select>
+          </div>
+          <div class="flex wow fadeInDown animated" style="width: 250px;">
+            <div class="box" style="width: 108px;">
+              <div class="group">
+                <button class="group_jian">-</button>
+                <input type="text" class="group_input" value="1">
+                <button class="group_add">+</button>
+              </div>
+            </div>
+            <div class="box ">
+              <button class="add_btn">Add to bag</button>
+            </div>
+          </div>
+          <div class="details-button mt-20 wow fadeInDown animated">
+            <img src="./img/箭头@4x.png" class="right_access">
+          </div>
+       </div>
+      </div>
+    <div class="bg-grey">
+      <div class="myOrders-content">
+        <div class="myOrders-content-left wow fadeInLeft animated" style="width: 50%;min-width: 500px;">
+          <p class="title">Slab</p>
+          <p><span>Images of stone are indicative only. Please contact us to view slabs in person.</span></p>
+        </div>
+        <div class="myOrders-content-right wow fadeInRight animated" style="width: 50%; min-width: 500px;">
+           <p class="card_name">Abu Dhabi White </p>
+           <div class="flex item">
+             <div class="box left">Surface</div>
+             <div class="box">Neolith</div>
+           </div>
+           <div class="flex item">
+             <div class="box left">Material</div>
+             <div class="box">Classtone(marble styles)</div>
+           </div>
+           <div class="flex item">
+             <div class="box left">Colors</div>
+             <div class="box">White</div>
+           </div>
+           <div class="flex item">
+             <div class="box left">Finish</div>
+             <div class="box">Polished Silk</div>
+           </div>
+           <div class="flex item">
+             <div class="box left">Use</div>
+             <div class="box">Kitchens - Bathrooms - Floors - Walls - BBQ Areas Outdoors - Slabs - Tiles - Cladding </div>
+           </div>
+           <div class="flex item">
+             <div class="box left">Size</div>
+             <div class="box">3200 x 1500 x 6mm - 3200 x 1600 x 12mm</div>
+           </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="bg-white">
+    </div> -->
+  </div>
+      <div class="login-bottom">
+        <img class="login-logo2" src="./img/Asset 1@4x-8 3@4x.png" />
+        <span class="login-bottom-dec wow fadeInDown animated">
+          Copyright Merit Stone 2020. All Rights Reserved.
+        </span>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/style.js"></script>
+
+     <script type="text/javascript">
+
+window.onscroll = function () {
+       let a = document.documentElement.scrollTop || document.body.scrollTop;//滚动条y轴上的距离
+       let b = document.documentElement.clientHeight || document.body.clientHeight;//可视区域的高度
+       let c = document.documentElement.scrollHeight || document.body.scrollHeight;//可视化的高度与溢出的距离（总高度）
+       if(a> 108){
+      document.getElementsByClassName('login-header')[0].style.bottomBorder = '1px solid #cdcdcd'
+      document.getElementsByClassName('login-header')[0].style.boxShadow = '0 0 4px  #808080'
+      
+       }else{
+        document.getElementsByClassName('login-header')[0].style.border = 'none'
+      document.getElementsByClassName('login-header')[0].style.boxShadow = 'none'
+       }
+    }
+      function handleGoto(path) {
+        window.location.href = `./${path}.html`;
+      }
+    </script>
+  </body>
+
+  <!-- Initialize Swiper -->
+  <script>        
+      $(document).ready(function(){
+        var index = 1
+        $('.img_ul > li').click(function(){
+          $(this).addClass('active')
+          $(this).siblings().removeClass('active') 
+          const indexs = $(this).data("id")
+          index = indexs
+          $(`.img${indexs}`).css({'top': 0})
+          $(`.img${indexs - 1}`).css({'top': '-600px'})
+          $(`.img${indexs - 2}`).css({'top': '-1200px'})
+          $(`.img${indexs - 3}`).css({'top': '-1800px'})
+          $(`.img${indexs + 1}`).css({'top': '600px'})
+          $(`.img${indexs + 2}`).css({'top': '1200px'})
+          $(`.img${indexs + 3}`).css({'top': '1800px'})
+
+        })
+        $('.next_box').click(function(){
+          index +=1;
+          if(index > 4) index = 1
+          $(`.img${index}`).css({'top': 0})
+          $(`.img${index - 1}`).css({'top': '-600px'})
+          $(`.img${index - 2}`).css({'top': '-1200px'})
+          $(`.img${index - 3}`).css({'top': '-1800px'})
+          $(`.img${index + 1}`).css({'top': '600px'})
+          $(`.img${index + 2}`).css({'top': '1200px'})
+          $(`.img${index + 3}`).css({'top': '1800px'})
+          $(`.li_${index}`).addClass('active')
+          $(`.li_${index}`).siblings().removeClass('active')
+        })
+        $('.prve_box').click(function(){
+          index -=1;
+          if(index < 1) index = 4
+          $(`.img${index}`).css({'top': 0})
+          $(`.img${index - 1}`).css({'top': '-600px'})
+          $(`.img${index - 2}`).css({'top': '-1200px'})
+          $(`.img${index - 3}`).css({'top': '-1800px'})
+          $(`.img${index + 1}`).css({'top': '600px'})
+          $(`.img${index + 2}`).css({'top': '1200px'})
+          $(`.img${index + 3}`).css({'top': '1800px'})
+          $(`.li_${index}`).addClass('active')
+          $(`.li_${index}`).siblings().removeClass('active')
+        })
+        var values = $('.group_input').val()
+        $('.group_add').click(function(){
+          values ++;
+          $(".group_input").val(values);
+        })
+        $('.group_jian').click(function(){
+          values --;
+          if(values <= 0) values = 0
+          $(".group_input").val(values);
+        })
+      })
+    </script>
+</html>

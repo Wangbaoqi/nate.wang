@@ -1,0 +1,194 @@
+.contact {
+}
+.contact-content {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f8f8f8;
+}
+.contact-title {
+  font-size: 24px;
+  font-family: FuturaBT-Medium, FuturaBT;
+  font-weight: 500;
+  color: #333333;
+  margin-top: 5%;
+}
+.contact-dec {
+  font-size: 16px;
+  font-family: FuturaBT-Book, FuturaBT;
+  font-weight: normal;
+  color: #333333;
+  margin-top: 4px;
+}
+.contact-panel {
+  display: flex;
+  margin-top: 48px;
+  width: 64%;
+  height: 110vh;
+}
+.contact-block {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 100%;
+}
+.contact-block:nth-child(2) {
+  margin-left: 5%;
+}
+.contact-row {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.contact-row label {
+  font-size: 18px;
+  font-family: FuturaBT-Medium, FuturaBT;
+  font-weight: 400;
+  color: #bf9757;
+}
+.contact-row b {
+  font-size: 18px;
+  font-family: FuturaBT-Medium, FuturaBT;
+  font-weight: 400;
+  color: #333333;
+}
+.contact-row-icon {
+  width: 32px;
+  height: 32px;
+}
+.contact-row-smallicon {
+  width: 20px;
+  height: 20px;
+}
+.contact-row:first-child {
+}
+.contact-block-img {
+  width: 30vw;
+  height: 20vw;
+  /* height: 35%; */
+}
+.contact-row-between {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-row-title {
+  font-size: 16px;
+  font-family: FuturaBT-Medium, FuturaBT;
+  font-weight: 500;
+  color: #333333;
+  margin-left: 12px;
+  width: 100px;
+  display: block;
+}
+.contact-row-word {
+  font-size: 16px;
+  font-family: FuturaBT-Book, FuturaBT;
+  font-weight: normal;
+  color: #333333;
+  width: 200px;
+}
+
+.comparing-button {
+  width: 197px;
+  height: 46px;
+  background: #f8f8f8;
+  border: 1px solid #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 15px;
+  font-family: FuturaBT-Book, FuturaBT;
+  font-weight: normal;
+  color: #333333;
+  line-height: 24px;
+  letter-spacing: 1px;
+  transform: 0.5s;
+  transition: 0.5s;
+  z-index: 2;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+.comparing-button:hover {
+
+  animation: rock 0.5s ease-in-out 0s 2 alternate forwards;
+}
+.comparing-button::before {
+  content: "  Request a sample";
+  position: absolute;
+  width: 197px;
+  height: 46px;
+  background: #f8f8f8;
+  border: 1px solid #333333;
+  display: flex;
+  left: 4px;
+  top: 4px;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.contact-button {
+  width: 197px;
+  height: 46px;
+  background: #f8f8f8;
+  border: 1px solid #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 15px;
+  font-family: FuturaBT-Book, FuturaBT;
+  font-weight: normal;
+  color: #333333;
+  line-height: 24px;
+  letter-spacing: 1px;
+  transform: 0.5s;
+  transition: 0.5s;
+  z-index: 2;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+.contact-button::before {
+  content: "Book an appointment";
+  position: absolute;
+  width: 197px;
+  height: 46px;
+  background: #f8f8f8;
+  border: 1px solid #333333;
+  display: flex;
+  left: 4px;
+  top: 4px;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.contact-button:hover {
+  animation: rock 0.5s ease-in-out 0s 2 alternate forwards;
+}
+.contact-selected {
+  border-bottom: 1px solid #525358;
+  padding: 6px 0;
+}
+.contact-panel-input {
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.swiper-button-next {
+  display: none;
+  background-image: url("../img/Group 4.png") !important;
+}
+.swiper-button-prev {
+  display: none;
+  left: 0 !important;
+  background-image: url("../img/Group 3.png") !important;
+}
+
+input:focus {
+  outline: none;
+}

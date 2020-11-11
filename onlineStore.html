@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width; initial-scale=1.0,maximum-scale=1.0,user-scalable=0"
+    />
+    <title></title>
+    
+    <link rel="stylesheet" href="css/myOrders.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/projectDetail.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <style>
+      .myOrders-title{
+        width: 100%;
+        padding:5% 0 5% 0;
+        text-align: center;
+      }
+      .pt-0{
+        padding-top:0!important
+      }
+      ul li{
+        list-style: none;
+      }
+      .access_top{
+        width: 6px;
+        height: 6px;
+        display: inline-block;
+        transform: rotate(45deg);
+        border-left: 2px solid #333333;
+        border-top: 2px solid #333333;
+        margin-top: 12px;
+      }
+      .pull-right{
+        float: right;
+      }
+      .kuai{
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border: 1px solid #f5f5f5;
+      }
+      .menu_li{
+        margin-top: 20px;
+      }
+      .menu_li:first-child{
+        margin-top: 0;
+      }
+      .menu_li > ul > li{
+        cursor: pointer;
+      }
+      .myOrders-content-selectd{
+        width: 100%;
+      }
+      .myOrders-content-selectd span{
+        color: #BF9757;
+        display: inline-block;
+      }
+      .row{
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .col-lg{
+        width: 33.3333333%;
+        float: left;
+      }
+      .card{
+        padding: 15px;
+      }
+      .card_img_box{
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+      }
+      .card_img{
+        position: absolute;
+        width:100%;
+        height: 100%;
+      }
+      .orange_text{
+        color: #c0b572;
+        margin-top: 20px;
+      }
+      .card_name{
+        font-weight: bold;
+        font-size: 110%;
+        margin:5px 0 10px;
+      }
+      .card_remarks{
+        color: #666666;
+      }
+      .effect_img{
+        position: absolute;
+        width: 100%;
+        height: 0;
+        z-index: 2;
+        /* transition: 1s all ease-out; */
+      }
+      .effect_img::before{
+        content:'';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+      }
+      .confirm_btn{
+        position: absolute;
+        width: 60px!important;
+        height: 60px!important;
+        right: 20px;
+        top: 20px;
+        z-index: 4;
+        transition: 1s all ease-out;
+        transform: rotate(360deg);
+        margin-top: -100px;
+      }
+      .effect_img >img{
+        width: 100%;
+        height: 100%;
+      }
+      .card:hover {
+        cursor: pointer;
+      }
+      .card:hover .effect_img{
+        height: 100%;
+      }
+      .card:hover .confirm_btn{
+        margin-top: 0px;
+        transform: rotate(0);
+      }
+      .confirm{
+        display: none;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="login">
+      <header class="login-header">
+       
+        <div class="login-img"><img class="login-logo" onclick="handleGoto('ourRange')"  src="./img/Asset 1@4x-8 2@4x.png" /></div>
+        <div class="login-menus">
+          <span class="login-menu" onclick="handleGoto('ourRange')" >Our range</span>
+          <span class="login-menu" onclick="handleGoto('onlineStore')" >Online store</span>
+          <span class="login-menu" onclick="handleGoto('ourProjects')" >Projects</span>
+          <span class="login-menu" onclick="handleGoto('about')" >About</span>
+          <span class="login-menu" onclick="handleGoto('contact')" >Contact</span>
+          <span class="login-menu" onclick="handleGoto('blog')" >Blog</span>
+          <span class="login-menu" onclick="handleGoto('downloadBrochure')" >Download brochure</span>
+        </div>
+        <div class="login-icons">
+          <img src="./img/ICON/Group 13.png" class="login-icon" />
+          <img src="./img/ICON/Group 12.png" class="login-icon" />
+          <img src="./img/ICON/Group 11.png" class="login-icon" />
+        </div>
+      </header>
+     
+      </div>
+      <div class="myOrders-title fadeInDown animated">
+        <h2>Our premium stones</h2>
+        <p style="margin-top:10px;">You could select two stones to compare</p>
+      </div>
+      <div class="myOrders-content pt-0">
+       <div class="myOrders-content-left" style="width: 15%;min-width: 150px;">
+         <ul class="menu_ul">
+           <li class="menu_li">
+             <label>Product  <span class="access_top pull-right"></span></label>
+             <ul>
+               <li class="second_li myOrders-content-selectd"><span>Slabs</span></li>
+               <li class="second_li"><span>Natural stone tiles</span></li>
+               <li  class="second_li"><span>Paver</span></li>
+               <li class="second_li"><span>Fireplace mantel</span></li>
+               <li class="second_li"><span>Waterjet pattern</span></li>
+               <li class="second_li"><span>Moulding and panelling</span></li>
+             </ul>
+           </li>
+           <li class="menu_li">
+            <label>Color  <span class="access_top pull-right"></span></label>
+            <ul>
+              <li class="second_li"><span class="kuai" style="background: beige;"></span> - <span>Beige</span></li>
+              <li class="second_li"><span class="kuai" style="background: white;"></span> - <span>White</span></li>
+              <li class="second_li"><span class="kuai" style="background: grey;"></span> - <span>Grey</span></li>
+              <li class="second_li"><span class="kuai" style="background: black;"></span> - <span>Black</span></li>
+              <li class="second_li"><span class="kuai" style="background: brown;"></span> - <span>Brown</span></li>
+              <li class="second_li"><span class="kuai" style="background: #c0b572;"></span> - <span>Others</span></li>
+            </ul>
+          </li>
+          <li class="menu_li">
+            <label>Gade  <span class="access_top pull-right"></span></label>
+            <ul>
+              <li class="second_li"><span>Travertine</span></li>
+              <li class="second_li"><span>Limestone</span></li>
+              <li class="second_li"><span>Marble</span></li>
+              <li class="second_li"><span>Dolomite</span></li>
+            </ul>
+          </li>
+          <li class="menu_li">
+            <label>Types of stone  <span class="access_top pull-right"></span></label>
+            <ul>
+              <li class="second_li"><span>Travertine</span></li>
+              <li class="second_li"><span>Limestone</span></li>
+              <li class="second_li"><span>Marble</span></li>
+              <li class="second_li"><span>Dolomite</span></li>
+              <li class="second_li"><span>Quartzite</span></li>
+              <li class="second_li"><span>Granite</span></li>
+              <li class="second_li"><span>Basalt</span></li>
+            </ul>
+          </li>
+          <li class="menu_li">
+            <label>Types of use  <span class="access_top pull-right"></span></label>
+            <ul>
+              <li class="second_li"><span>Bathroom</span></li>
+              <li class="second_li"><span>Living room</span></li>
+              <li class="second_li"><span>Marble</span></li>
+              <li class="second_li"><span>Kitchen</span></li>
+              <li class="second_li"><span>Laundry</span></li>
+              <li class="second_li"><span>Outdoor paving</span></li>
+            </ul>
+          </li>
+         </ul>
+       </div>
+       <div class="myOrders-content-right" style="min-width: 960px;">
+        <div class="row">
+          <div class="col-lg">
+            <div class="card fadeInDown animated">
+              <div class="card_img_box">
+                <img src="./img/图片/Rectangle 8@4x.png" class="card_img">
+              </div>
+              <p class="orange_text">Classtone(marble styles)</p>
+              <p class="card_name">Abu Dhabi White</p>
+              <p class="card_remarks">Login to view price</p>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card fadeInDown animated">
+              <div class="card_img_box">
+                <img src="./img/图片/Rectangle 14@4x.png" class="card_img">
+              </div>
+              <p class="orange_text">Classtone(marble styles)</p>
+              <p class="card_name">Amazonico</p>
+              <p class="card_remarks">Login to view price</p>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card fadeInDown animated">
+              <div class="card_img_box">
+                <img src="./img/图片/Rectangle 17@4x.png" class="card_img">
+              </div>
+              <p class="orange_text">Classtone(marble styles)</p>
+              <p class="card_name">Arctic white</p>
+              <p class="card_remarks">Login to view price</p>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card fadeInDown animated">
+              <div class="card_img_box">
+                <img src="./img/图片/Rectangle 8@4x.png" class="card_img">
+                <div class="effect_img">
+                  <img src="./img/图片/Rectangle12@4x.png">
+                  <img src="./img/Group 4@4x.png" class="confirm_btn add">
+                  <img src="./img/Group 5@4x.png" class="confirm_btn confirm">
+                </div>
+              </div>
+              <p class="orange_text">Classtone(marble styles)</p>
+              <p class="card_name">Abu Dhabi White</p>
+              <p class="card_remarks">$100.43</p>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card fadeInDown animated">
+              <div class="card_img_box">
+                <img src="./img/图片/Rectangle 18@4x.png" class="card_img">
+                <div class="effect_img">
+                  <img src="./img/图片/Rectangle12@4x.png">
+                  <img src="./img/Group 4@4x.png" class="confirm_btn add">
+                  <img src="./img/Group 5@4x.png" class="confirm_btn confirm">
+                </div>
+              </div>
+              <p class="orange_text">Classtone(marble styles)</p>
+              <p class="card_name">Amazonico</p>
+              <p class="card_remarks">$319.99</p>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card fadeInDown animated">
+              <div class="card_img_box">
+                <img src="./img/图片/Rectangle 10@4x.png" class="card_img">
+                <div class="effect_img">
+                  <img src="./img/图片/Rectangle12@4x.png">
+                  <img src="./img/Group 4@4x.png" class="confirm_btn add">
+                  <img src="./img/Group 5@4x.png" class="confirm_btn confirm">
+                </div>
+              </div>
+              <p class="orange_text">Classtone(marble styles)</p>
+              <p class="card_name">Arctic white</p>
+              <p class="card_remarks">$752.56</p>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card fadeInDown animated">
+              <div class="card_img_box">
+                <img src="./img/图片/Rectangle 11@4x.png" class="card_img">
+                <div class="effect_img">
+                  <img src="./img/图片/Rectangle12@4x.png">
+                  <img src="./img/Group 4@4x.png" class="confirm_btn add">
+                  <img src="./img/Group 5@4x.png" class="confirm_btn confirm">
+                </div>
+              </div>
+              <p class="orange_text">Classtone(marble styles)</p>
+              <p class="card_name">Abu Dhabi White</p>
+              <p class="card_remarks">$207.76</p>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card fadeInDown animated">
+              <div class="card_img_box">
+                <img src="./img/图片/Rectangle 12@4x.png" class="card_img">
+                <div class="effect_img">
+                  <img src="./img/图片/Rectangle12@4x.png">
+                  <img src="./img/Group 4@4x.png" class="confirm_btn add">
+                  <img src="./img/Group 5@4x.png" class="confirm_btn confirm">
+                </div>
+              </div>
+              <p class="orange_text">Classtone(marble styles)</p>
+              <p class="card_name">Amazonico</p>
+              <p class="card_remarks">$290.98</p>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card fadeInDown animated">
+              <div class="card_img_box">
+                <img src="./img/图片/Rectangle 13@4x.png" class="card_img">
+                <div class="effect_img">
+                  <img src="./img/图片/Rectangle12@4x.png">
+                  <img src="./img/Group 4@4x.png" class="confirm_btn add">
+                  <img src="./img/Group 5@4x.png" class="confirm_btn confirm">
+                </div>
+              </div>
+              <p class="orange_text">Classtone(marble styles)</p>
+              <p class="card_name">Arctic white</p>
+              <p class="card_remarks">$140.79</p>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card fadeInDown animated">
+              <div class="card_img_box">
+                <img src="./img/图片/Rectangle 9@4x.png" class="card_img">
+                <div class="effect_img">
+                  <img src="./img/图片/Rectangle12@4x.png">
+                  <img src="./img/Group 4@4x.png" class="confirm_btn add">
+                  <img src="./img/Group 5@4x.png" class="confirm_btn confirm">
+                </div>
+              </div>
+              <p class="orange_text">Classtone(marble styles)</p>
+              <p class="card_name">Amazonicoe</p>
+              <p class="card_remarks">$844.88</p>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card fadeInDown animated">
+              <div class="card_img_box">
+                <img src="./img/图片/Rectangle 15@4x.png" class="card_img">
+                <div class="effect_img">
+                  <img src="./img/图片/Rectangle12@4x.png">
+                  <img src="./img/Group 4@4x.png" class="confirm_btn add">
+                  <img src="./img/Group 5@4x.png" class="confirm_btn confirm">
+                </div>
+              </div>
+              <p class="orange_text">Classtone(marble styles)</p>
+              <p class="card_name">Amazonicoe</p>
+              <p class="card_remarks">$917.98</p>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card fadeInDown animated">
+              <div class="card_img_box">
+                <img src="./img/图片/Rectangle 16@4x.png" class="card_img">
+                <div class="effect_img">
+                  <img src="./img/图片/Rectangle12@4x.png">
+                  <img src="./img/Group 4@4x.png" class="confirm_btn add">
+                  <img src="./img/Group 5@4x.png" class="confirm_btn confirm">
+                </div>
+              </div>
+              <p class="orange_text">Classtone(marble styles)</p>
+              <p class="card_name">Arctic white</p>
+              <p class="card_remarks">$497.22</p>
+            </div>
+          </div>
+        </div>
+       </div>
+  </div>
+
+  </div>
+      <div class="login-bottom">
+        <img class="login-logo2" src="./img/Asset 1@4x-8 3@4x.png" />
+        <span class="login-bottom-dec wow fadeInDown animated">
+          Copyright Merit Stone 2020. All Rights Reserved.
+        </span>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/style.js"></script>
+
+     <script type="text/javascript">
+      function handleGoto(path) {
+        window.location.href = `./${path}.html`;
+      }
+    </script>
+  </body>
+
+  <!-- Initialize Swiper -->
+  <script>        
+
+window.onscroll = function () {
+       let a = document.documentElement.scrollTop || document.body.scrollTop;//滚动条y轴上的距离
+       let b = document.documentElement.clientHeight || document.body.clientHeight;//可视区域的高度
+       let c = document.documentElement.scrollHeight || document.body.scrollHeight;//可视化的高度与溢出的距离（总高度）
+       if(a> 108){
+      document.getElementsByClassName('login-header')[0].style.bottomBorder = '1px solid #cdcdcd'
+      document.getElementsByClassName('login-header')[0].style.boxShadow = '0 0 4px  #808080'
+      
+       }else{
+        document.getElementsByClassName('login-header')[0].style.border = 'none'
+      document.getElementsByClassName('login-header')[0].style.boxShadow = 'none'
+       }
+    }
+      $(document).ready(function(){
+        $(".confirm_btn").click(function(){
+          $(this).hide()
+          $(this).siblings().fadeIn()
+        })
+        $(".menu_ul > .menu_li > ul > li").click(function(){
+          $(this).addClass('myOrders-content-selectd')
+          $(this).siblings().removeClass('myOrders-content-selectd')
+          $(this).parent().parent().siblings().find('.second_li').removeClass('myOrders-content-selectd')
+        })
+      })
+    </script>
+</html>

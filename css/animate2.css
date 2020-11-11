@@ -1,0 +1,22 @@
+@keyframes rock {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 20px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes topToBottom {
+  0% {
+    top: 0;
+  }
+  /* 50% {
+    top: 20px;
+  } */
+  100% {
+    top: 20px;
+  }
+}

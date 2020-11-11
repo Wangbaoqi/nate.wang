@@ -1,0 +1,79 @@
+.myOrders-content {
+  display: flex;
+  padding: 5% 5% 10% 5%;
+}
+.myOrders-content-left {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+}
+.myOrders-content-right {
+  margin-left: 5%;
+  width: 85%;
+}
+.myOrders-content-left label {
+  font-size: 18px;
+  font-family: Jost-Regular, Jost;
+  font-weight: 400;
+  color: #000000;
+  line-height: 26px;
+  margin-bottom: 50%;
+}
+.myOrders-content-left span {
+  font-size: 14px;
+  font-family: FuturaBT-Light, FuturaBT;
+  font-weight: 300;
+  color: #000000;
+  line-height: 42px;
+}
+.myOrders-content-right label {
+  font-size: 18px;
+  font-family: Jost-Regular, Jost;
+  font-weight: 400;
+  color: #000000;
+  line-height: 26px;
+}
+.myOrders-content-right table {
+  margin-top: 5%;
+  border-spacing: 0;
+  width: 100%;
+}
+.myOrders-content-right td {
+  font-size: 12px;
+  font-family: FuturaBT-Light, FuturaBT;
+  font-weight: 300;
+  color: #000000;
+  border: none;
+  border-top: 1px solid #bfbfbf;
+  padding: 20px 8px;
+}
+.myOrders-content-td {
+  height: 100px;
+}
+.myOrders-content-td img {
+  width: 72px;
+  height: 72px;
+  margin-right: 8px;
+}
+.myOrders-content-cancel {
+  width: 100px;
+  height: 39px;
+  border: 1px solid #bfbfbf;
+}
+.myOrders-content-pay {
+  width: 100px;
+  height: 39px;
+  background: #d8d1c7;
+  border: none;
+  margin-left: 16px;
+}
+.myOrders-content-selectd {
+  border-bottom: 1px solid #bf9757;
+  color: #bf9757;
+  width: 65px;
+}
+.myOrders-content-right-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
