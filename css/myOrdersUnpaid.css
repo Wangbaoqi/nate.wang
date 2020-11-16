@@ -1,6 +1,10 @@
+
+.myOrders-unpaid {
+  font-family: 'Futura Book', 'Futura Medium', sans-serif;
+}
 .myOrdersUnpaid-content {
   display: flex;
-  padding: 5% 10% 35% 10%;
+  padding: 40px;
 }
 .myOrdersUnpaid-content-left {
   display: flex;
@@ -9,39 +13,36 @@
 }
 .myOrdersUnpaid-content-right {
   margin-left: 5%;
-  width: 75%;
+  width: 85%;
   position: relative;
 }
 .myOrdersUnpaid-content-left label {
   font-size: 18px;
-  font-family: Jost-Regular, Jost;
   font-weight: 400;
   color: #000000;
   line-height: 26px;
-  margin-bottom: 50%;
+  margin: 5px 0 60px 0;
 }
 .myOrdersUnpaid-content-left span {
   font-size: 14px;
-  font-family: FuturaBT-Light, FuturaBT;
   font-weight: 300;
   color: #000000;
-  line-height: 42px;
+  line-height: 40px;
+  cursor: pointer;
 }
 .myOrdersUnpaid-content-right label {
   font-size: 18px;
-  font-family: Jost-Regular, Jost;
   font-weight: 400;
   color: #000000;
   line-height: 26px;
 }
 .myOrdersUnpaid-content-right table {
-  margin-top: 5%;
+  margin-top: 30px;
   border-spacing: 0;
   width: 100%;
 }
 .myOrdersUnpaid-content-right td {
   font-size: 12px;
-  font-family: FuturaBT-Light, FuturaBT;
   font-weight: 300;
   color: #000000;
   border: none;
@@ -66,7 +67,7 @@
   cursor: pointer;
 }
 
-.myOrdersUnpaid-content-cancel:focus {
+.myOrdersUnpaid-content-cancel:focus, .myOrdersUnpaid-content-pay:focus {
   outline: none;
 }
 .myOrdersUnpaid-content-pay {
@@ -79,15 +80,19 @@
 .myOrdersUnpaid-content-selectd {
   border-bottom: 1px solid #bf9757;
   color: #bf9757;
-  width: 42px;
+  width: 75%;
 }
 .myOrdersUnpaid-content-right-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #BFBFBF;
+  padding-bottom: 30px;
 }
 .myOrdersUnpaid-content-right-titleTop {
   margin-top: 44px;
+  border: 0;
+  padding-bottom: 0;
 }
 .myOrdersUnpaid-content-panel {
   width: 100%;
@@ -100,27 +105,33 @@
   border: none;
   padding: 8px;
   font-size: 12px;
-  font-family: FuturaBT-Light, FuturaBT;
+
   font-weight: 300;
   color: #000000;
 }
 .myOrdersUnpaid-content-table  {
   margin-top: 0!important;
-  padding: 24px ;
+  padding: 20px;
+}
+
+.myOrdersUnpaid-content-table p {
+  margin: 4px 0;
 }
 .myOrdersUnpaid-content-tableDetail td{
   font-size: 14px;
-  font-family: FuturaBT-Book, FuturaBT;
   font-weight: normal;
   color: #000000;
 }
 
+.myOrdersUnpaid-content-tableDetail .goods-sku {
+  color: #939393;
+}
 
 .myOrdersUnpaid-total{
-  position: absolute;
-  right: 0;
   width: 336px;
   margin-top: 40px;
+  margin-right: 10px;
+  float: right;
 }
 
 .myOrdersUnpaid-total-block{
@@ -143,9 +154,7 @@
 
 
 .myOrdersUnpaid-total-block label{
-
   font-size: 12px;
-  font-family: FuturaBT-Book, FuturaBT;
   font-weight: normal;
   color: #000000;
   display: flex;
@@ -153,9 +162,7 @@
   text-indent: 70px;
 }
 .myOrdersUnpaid-total-block span{
-
   font-size: 12px;
-  font-family: FuturaBT-Book, FuturaBT;
   font-weight: normal;
   color: #000000;
   display: flex;
@@ -171,15 +178,10 @@ margin-left: 18px;
 }
 .myOrdersUnpaid-content-goods label{
   font-size: 16px;
-  font-family: FuturaBT-Book, FuturaBT;
   font-weight: normal;
   color: #000000;
 }
 
-.myOrdersUnpaid-content-goods span{
-
-  font-size: 16px;
-  font-family: FuturaBT-Book, FuturaBT;
-  font-weight: normal;
+.myOrdersUnpaid-content-goods .total-price{
   color: #939393;
 }

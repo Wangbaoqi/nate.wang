@@ -2,14 +2,13 @@
   width: 50%;
   margin-left: 25%;
   align-items: flex-start;
-  padding-bottom: 10%;
+  padding-bottom: 30%;
   background: none;
 }
 .bookAppointment2 {
   width: 60%;
-  margin-left: 20%;
+  padding: 10% 20% 20%;
   align-items: flex-start;
-  padding-bottom: 10%;
 }
 .bookAppointment input {
   width: 100%;
@@ -28,7 +27,7 @@
   width: 100%;
   height: 10%;
   border-bottom: 1px solid #cccccc;
-  padding: 2%;
+  padding: 2% 0;
   background: #f8f8f8;
   margin-top: 5%;
   background: none;
@@ -58,7 +57,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: center;
 }
 .bookAppointment-panel img {
   width: 24px;
@@ -69,14 +67,14 @@
 }
 .bookAppointment-title {
   font-size: 20px;
-  font-family: FuturaBT-Medium, FuturaBT;
+  font-family: 'Futura Medium', 'Futura Book';
+
   font-weight: 500;
   color: #333333;
-  margin-top: 10%;
 }
 .bookAppointment-dec {
   font-size: 14px;
-  font-family: Jost-Regular, Jost;
+  font-family: 'Jost Light';
   font-weight: 400;
   color: #333333;
   margin-top: 2%;
@@ -91,7 +89,7 @@
   align-items: center;
   position: relative;
   font-size: 15px;
-  font-family: FuturaBT-Book, FuturaBT;
+  font-family: 'Futura Book';
   font-weight: normal;
   color: #333333;
   line-height: 24px;
@@ -131,7 +129,7 @@
   align-items: center;
   position: relative;
   font-size: 15px;
-  font-family: FuturaBT-Book, FuturaBT;
+  font-family: 'Futura Book';
   font-weight: normal;
   color: #333333;
   line-height: 24px;
@@ -170,11 +168,8 @@
 
 .details {
   width: 100%;
-  /* padding:50px 50px 0; */
 }
 .details .item {
-  /* width:400px;
-    margin:20px auto; */
   position: relative;
   width: 100%;
 }
@@ -183,12 +178,11 @@
   position: absolute;
   left: 2px;
   bottom: 10px;
-  font-family: "宋体";
+  font-family: 'Futura Book';
   color: #777;
   cursor: text;
 }
 .item input {
-  /* width:400px; */
   height: 20px;
   font-size: 16px;
   border: none;

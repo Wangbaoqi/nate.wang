@@ -1,71 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width; initial-scale=1.0,maximum-scale=1.0,user-scalable=0"
-    />
-    <title></title>
-    <link rel="stylesheet" href="css/login.css" />
-    <link rel="stylesheet" href="css/contact.css" />
-    <link rel="stylesheet" href="css/bookAppointment.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/swiper.min.css" />
-    <!-- <link rel="stylesheet/less" type="text/css" href="less.less" />
-    <script type="text/javascript">
-      less = {
-        env: "development",
-        async: false,
-        fileAsync: false,
-        poll: 1000,
-        functions: {},
-        dumpLineNumbers: "comments",
-        relativeUrls: false,
-        rootpath: ":/a.com/",
-      };
-    </script>
-    <script src="./dist/less.min.js"></script> -->
-  </head>
 
-  <body>
-    <div class="login">
-      <header class="login-header">
-       
-        <div class="login-img">
-          <img
-            class="login-logo"
-            onclick="handleGoto('ourRange')"
-            src="./img/Asset 1@4x-8 2@4x.png"
-          />
-        </div>
-        <div class="login-menus">
-          <span class="login-menu" onclick="handleGoto('ourRange')"
-            >Our range</span
-          >
-          <span class="login-menu" onclick="handleGoto('onlineStore')"
-            >Online store</span
-          >
-          <span class="login-menu" onclick="handleGoto('ourProjects')"
-            >Projects</span
-          >
-          <span class="login-menu" onclick="handleGoto('about')">About</span>
-          <span class="login-menu" onclick="handleGoto('contact')"
-            >Contact</span
-          >
-          <span class="login-menu" onclick="handleGoto('blog')">Blog</span>
-          <span class="login-menu" onclick="handleGoto('downloadBrochure')"
-            >Download brochure</span
-          >
-        </div>
-        <div class="login-icons">
-          <img src="./img/ICON/Group 13.png" class="login-icon" />
-          <img src="./img/ICON/Group 12.png" class="login-icon" />
-          <img src="./img/ICON/Group 11.png" class="login-icon" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <title></title>
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/bookAppointment.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+</head>
+
+<body>
+
+
+  <div class="request-sample">
+    <!-- header -->
+    <div class="main-header-box">
+      <header class="main-header">
+        <div class="container header-layout">
+          <div class="header-logo">
+            <img class="logo-icon" onclick="handleGoto('ourRange')" src="./img/site-icon.png" />
+          </div>
+          <nav class="header-menus">
+            <span class="menu-item" onclick="handleGoto('ourRange')">Our range</span>
+            <span class="menu-item" onclick="handleGoto('onlineStore')">Online store</span>
+            <span class="menu-item" onclick="handleGoto('ourProjects')">Projects</span>
+            <span class="menu-item" onclick="handleGoto('about')">About</span>
+            <span class="menu-item" onclick="handleGoto('contact')">Contact</span>
+            <span class="menu-item" onclick="handleGoto('blog')">Blog</span>
+            <span class="menu-item" onclick="handleGoto('downloadBrochure')">Download brochure</span>
+          </nav>
+          <span class="header-icons">
+            <img src="./img/ICON/shop-icon.png" class="item-icon" />
+            <img src="./img/ICON/my-icon.png" class="item-icon" onclick="handleGoto('myAccount')"/>
+            <img src="./img/ICON/search-icon.png" class="item-icon" />
+          </span>
         </div>
       </header>
+    </div>
+
+    <main class="">
       <div class="contact-content bookAppointment2">
+
+
         <div class="bookAppointment-title wow fadeInDown animated">Request a sample</div>
         <div class="bookAppointment-dec wow fadeInDown animated">
           If you’re interested in a product Book, please email us directly on
@@ -73,86 +53,62 @@
           visit you.
         </div>
         <div class="bookAppointment-panel2">
-          <img
-            class="bookAppointment-panel2-leftImg"
-            src="./img/图片/3d-rendering-luxury-hotel-reception-hall-and-offic-HGUS5JJ@4x.png"
-          />
+          <img class="bookAppointment-panel2-leftImg"
+            src="./img/pic/3d-rendering-luxury-hotel-reception-hall-and-offic-HGUS5JJ@4x.png" />
           <div class="bookAppointment-panel2-right">
             <div class="bookAppointment-panel2-row">
-              <input
-                type="text"
-                placeholder="Name*"
-                class="bookAppointment2-input wow fadeInDown animated"
-              />
-              <input
-                type="text"
-                placeholder="Number*"
-                class="bookAppointment2-input wow fadeInDown animated"
-              />
+              <input type="text" placeholder="Name*" class="bookAppointment2-input wow fadeInDown animated" />
+              <input type="text" placeholder="Number*" class="bookAppointment2-input wow fadeInDown animated" />
             </div>
-            <input
-              type="text"
-              placeholder="Email*"
-              class="bookAppointment2-input wow fadeInDown animated"
-            />
-            <input
-              type="text"
-              placeholder="Postal Address*"
-              class="bookAppointment2-input wow fadeInDown animated"
-            />
+            <input type="text" placeholder="Email*" class="bookAppointment2-input wow fadeInDown animated" />
+            <input type="text" placeholder="Postal Address*" class="bookAppointment2-input wow fadeInDown animated" />
             <div class="bookAppointment-panel2-row wow fadeInDown animated">
               <span><input type="checkbox" /> Trade </span>
               <span><input type="checkbox" /> Tetail used</span>
             </div>
-            <input
-              type="text"
-              placeholder="Message*"
-              class="bookAppointment2-input wow fadeInDown animated"
-            />
+            <input type="text" placeholder="Message*" class="bookAppointment2-input wow fadeInDown animated" />
             <div class="bookAppointment-panel2-button wow fadeInDown animated">
-              
-              <img
-                class="bookAppointment-panel2-icon"
-                src="./img/1001602989135_.pic.jpg"
-              />
+  
+              <img class="bookAppointment-panel2-icon" src="./img/1001602989135_.pic.jpg" />
             </div>
           </div>
         </div>
       </div>
+    </main>
 
-      <div class="login-bottom">
-        <img
-          class="login-logo2"
-          class="bookAppointment-panel2-leftImg"
-          src="./img/Asset 1@4x-8 3@4x.png"
-        />
-        <span class="login-bottom-dec wow fadeInDown animated">
-          Copyright Merit Stone 2020. All Rights Reserved.
-        </span>
-      </div>
-    </div>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/style.js"></script>
-    <script type="text/javascript">
+    <footer class="main-footer">
+      <img class="footer-icon" src="./img/footer-icon.png" />
+      <p class="login-bottom-dec wow fadeInDown animated">
+        Copyright Merit Stone 2020. All Rights Reserved.
+      </p>
+    </footer>
+  </div>
 
-window.onscroll = function () {
-       let a = document.documentElement.scrollTop || document.body.scrollTop;//滚动条y轴上的距离
-       let b = document.documentElement.clientHeight || document.body.clientHeight;//可视区域的高度
-       let c = document.documentElement.scrollHeight || document.body.scrollHeight;//可视化的高度与溢出的距离（总高度）
-       if(a> 108){
-      document.getElementsByClassName('login-header')[0].style.bottomBorder = '1px solid #cdcdcd'
-      document.getElementsByClassName('login-header')[0].style.boxShadow = '0 0 4px  #808080'
-      
-       }else{
-        document.getElementsByClassName('login-header')[0].style.border = 'none'
-      document.getElementsByClassName('login-header')[0].style.boxShadow = 'none'
-       }
+
+ 
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+  <script type="text/javascript" src="js/style.js"></script>
+  <script type="text/javascript">
+    // window.onscroll = function () {
+    //   let a = document.documentElement.scrollTop || document.body.scrollTop; //滚动条y轴上的距离
+    //   let b = document.documentElement.clientHeight || document.body.clientHeight; //可视区域的高度
+    //   let c = document.documentElement.scrollHeight || document.body.scrollHeight; //可视化的高度与溢出的距离（总高度）
+    //   if (a > 108) {
+    //     document.getElementsByClassName('login-header')[0].style.bottomBorder = '1px solid #cdcdcd'
+    //     document.getElementsByClassName('login-header')[0].style.boxShadow = '0 0 4px  #808080'
+
+    //   } else {
+    //     document.getElementsByClassName('login-header')[0].style.border = 'none'
+    //     document.getElementsByClassName('login-header')[0].style.boxShadow = 'none'
+    //   }
+    // }
+
+    function handleGoto(path) {
+      window.location.href = `./${path}.html`;
     }
-      function handleGoto(path) {
-        window.location.href = `./${path}.html`;
-      }
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>

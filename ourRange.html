@@ -1,467 +1,312 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width; initial-scale=1.0,maximum-scale=1.0,user-scalable=0"
-    />
-    <title></title>
-    <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/login.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/animate2.css" />
-    <link rel="stylesheet" href="css/swiper.min.css" />
-  </head>
 
-  <body>
-    <div class="home">
-      <header class="home-header container">
-        <video
-          class="home-video"
-          preload=""
-          tabindex="-1"
-          loop="true"
-          muted="true"
-          id="bgvideo"
-          autoplay
-        >
-          <source src="img/video.mp4" type="video/mp4" />
-        </video>
-        <div class="home-menus">
-          <span class="home-menu" onclick="handleGoto('ourRange')"
-            >Our range</span
-          >
-          <span class="home-menu" onclick="handleGoto('onlineStore')"
-            >Online store</span
-          >
-          <span class="home-menu" onclick="handleGoto('ourProjects')"
-            >Projects</span
-          >
-          <span class="home-menu" onclick="handleGoto('about')">About</span>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <title></title>
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/animate2.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+</head>
 
-          <div>
-            <img
-              class="home-logo"
-              onclick="handleGoto('ourRange')"
-              src="./img/581602630685_.pic.jpg"
-            />
-          </div>
-          <span class="home-menu" onclick="handleGoto('contact')">Contact</span>
-          <span class="home-menu" onclick="handleGoto('blog')">Blog</span>
-          <span class="home-menu" onclick="handleGoto('downloadBrochure')"
-            >Download brochure</span
-          >
+<body>
+  <div class="home">
+    <header class="home-header">
+      <video class="home-video" preload="" tabindex="-1" loop="true" muted="true" id="bgvideo" autoplay>
+        <source src="img/video.mp4" type="video/mp4" />
+      </video>
+      <div class="home-menus">
+        <span class="home-menu" onclick="handleGoto('ourRange')">Our range</span>
+        <span class="home-menu" onclick="handleGoto('onlineStore')">Online store</span>
+        <span class="home-menu" onclick="handleGoto('ourProjects')">Projects</span>
+        <span class="home-menu" onclick="handleGoto('about')">About</span>
 
-          <div class="home-icons">
-            <img src="./img/ICON/Group 15.png" class="home-icon" />
-            <img src="./img/ICON/Group 16.png" class="home-icon" />
-            <img src="./img/ICON/Group 17.png" class="home-icon" />
-          </div>
+        <div>
+          <img class="home-logo" onclick="handleGoto('ourRange')" src="./img/581602630685_.pic.jpg" />
         </div>
-        <div class="home-slogan">
-          <div class="wow fadeInDown animated">Merit Stone</div>
-          <span class="wow fadeInDown animated"
-            >Merit Stone specialises in offering a variety range of high-end
-            premium quality stones.
-          </span>
-        </div>
+        <span class="home-menu" onclick="handleGoto('contact')">Contact</span>
+        <span class="home-menu" onclick="handleGoto('blog')">Blog</span>
+        <!-- <span class="home-menu" onclick="handleGoto('downloadBrochure')">Download brochure</span> -->
 
-        <div class="home-scroll   ">
-          <span>SCROLL DOWN</span>
-          <img class="home-scroll-img" src="./img/Down arrow@4x.png" />
-        </div>
-      </header>
-    </div>
-    
-      <div class="home-content1 container ">
-        <div class="home-content1-div fadeInLeft wow animated">
-          <div class='mask'>
-          </div>
-        </div>
-        
-        <div class="fadeInDown wow animated">
-          <label> Services we provide </label>
-          <span>
-            Merit Stone specialises in offering a variety range of high-end
-            premium quality stones. Our professional team pride ourselves in
-            providing personalised design to meet our customer’s building and
-            renovating needs. Our customer praises us for having the option to
-            customised and crafted natural stones into different shapes and
-            sizes accordingly to their liking. Whether it is for commercial,
-            industrial or residential needs, our marble and granite are designed
-            and precisely chosen for each piece to be flawless to give the
-            interior design a unique look.
-          </span>
+        <div class="home-icons">
+          <img src="./img/ICON/Group 15.png" class="home-icon" />
+          <img src="./img/ICON/Group 16.png" class="home-icon" onclick="handleGoto('myAccount')"/>
+          <img src="./img/ICON/Group 17.png" class="home-icon" />
         </div>
       </div>
-      <!-- <div class="home-content2 container">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-
-              <div class="home-content2 container">
-              <div class="home-content2-block">
-                <img
-                  src="./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x.png"
-                  class="home-content2-block-img"
-                />
-                <label>Royal stone</label>
-                <span
-                  >Elegant dune
-                  <img class="home-content2-icon" src="./img/箭头1@4x.png"
-                /></span>
-              </div>
-</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="home-content2-block">
-                <img
-                  src="./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x.png"
-                  class="home-content2-block-img"
-                />
-                <label>Royal stone</label>
-                <span
-                  >Elegant dune
-                  <img class="home-content2-icon" src="./img/箭头1@4x.png"
-                /></span>
-              </div>
-            </div>
-            <div class="swiper-slide"> <div class="home-content2-block">
-              <img
-                src="./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x.png"
-                class="home-content2-block-img"
-              />
-              <label>Royal stone</label>
-              <span
-                >Elegant dune
-                <img class="home-content2-icon" src="./img/箭头1@4x.png"
-              /></span>
-            </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <div class="swiper-scrollbar"></div>
-        </div>
- -->
-       
-        <!-- <div class="home-content2-block">
-          <img
-            src="./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 2.png"
-            class="home-content2-block-img"
-          />
-          <label>Royal stone</label>
-          <span
-            >Elegant dune
-            <img class="home-content2-icon" src="./img/箭头1@4x.png"
-          /></span>
-        </div>
-        <div class="home-content2-block">
-          <img
-            src="./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 2_1.png"
-            class="home-content2-block-img"
-          />
-          <label>Royal stone</label>
-          <span
-            >Elegant dune
-            <img class="home-content2-icon" src="./img/箭头1@4x.png"
-          /></span>
-        </div>
-        <div class="home-content2-block">
-          <img
-            src="./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x_1.png"
-            class="home-content2-block-img"
-          />
-          <label>Royal stone</label>
-          <span
-            >Elegant dune
-            <img class="home-content2-icon" src="./img/箭头1@4x.png"
-          /></span>
-        </div>
-        <div class="home-content2-block">
-          <img
-            src="./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 3.png"
-            class="home-content2-block-img"
-          />
-          <label>Royal stone</label>
-          <span
-            >Elegant dune
-            <img class="home-content2-icon" src="./img/箭头1@4x.png"
-          /></span>
-        </div>
-        <div class="home-content2-block">
-          <img
-            src="./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x_1.png"
-            class="home-content2-block-img"
-          />
-          <label>Royal stone</label>
-          <span
-            >Elegant dune
-            <img class="home-content2-icon" src="./img/箭头1@4x.png"
-          /></span>
-        </div> -->
-      </div>
-      <img src='./img/图片/Video2@4x.jpg' class="home-bgImg"/>
-      <div class="home-dots">
-        <span class="home-dot" id='home-dot1' ></span>
-        <span class="home-dot" id='home-dot2' ></span>
-       <span class="home-dot" id='home-dot3' ></span>
-        <span class="home-dot" id='home-dot4' ></span>
+      <div class="home-slogan">
+        <div class="wow fadeInDown animated">Merit Stone</div>
+        <span class="wow fadeInDown animated">Merit Stone specialises in offering a variety range of high-end
+          premium quality stones.
+        </span>
       </div>
 
-      <div class="home-content3 container">
-        <div class="home-content3-block wow fadeInRight  animated">
-          <div class="home-content3-block-title">Merit Stone selection</div>
-          <div class="home-content3-block-dec">
-            We are a trusted business that are passionate in providing
-            customized-made sophisticated and premium stones in the market. We
-            hold a reputation in individualizing stones cuts to according to
-            customer’s preferences.
-          </div>
-          <div class="home-content3-block-more">
-            <img class="home-content3-icon" src="./img/箭头1@4x.png" /><span
-              >Learn more</span
-            >
-          </div>
-        </div>
+      <div class="home-scroll   ">
+        <span>SCROLL DOWN</span>
+        <img class="home-scroll-img" src="./img/Down arrow@4x.png" />
+      </div>
+    </header>
+  </div>
+
+  <div class="home-content1 ">
+    <div class="home-content1-div fadeInLeft wow animated">
+      <div class='mask'>
       </div>
     </div>
 
-    <div class="home-content4 container">
-      <div class="home-content4-title fadeInDown wow animated">Project Gallery</div>
-      <div class="home-content4-dec fadeInDown wow animated">
-        We believe in developing objects with a purpose that will last for a
-        lifetime. Here are some of our favourite projects and collaborations.
-      </div>
-      <div class="home-content4-imgs fadeInLeft wow animated">
-        <div class="home-content4-block">
-          <img
-            src="./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x_2.png"
-            class="home-content4-img"
-          />
-          <div class="home-content4-block-bottom">
-            Royal stone – elegant dune
-          </div>
-        </div>
+    <div class="fadeInDown wow animated">
+      <label> Services we provide </label>
+      <span>
+        Merit Stone specialises in offering a variety range of high-end
+        premium quality stones. Our professional team pride ourselves in
+        providing personalised design to meet our customer’s building and
+        renovating needs. Our customer praises us for having the option to
+        customised and crafted natural stones into different shapes and
+        sizes accordingly to their liking. Whether it is for commercial,
+        industrial or residential needs, our marble and granite are designed
+        and precisely chosen for each piece to be flawless to give the
+        interior design a unique look.
+      </span>
+    </div>
+  </div>
+  
+  <img src='./img/pic/Video2@4x.jpg' class="home-bgImg" />
+  <div class="home-dots">
+    <span class="home-dot" id='home-dot1'></span>
+    <span class="home-dot" id='home-dot2'></span>
+    <span class="home-dot" id='home-dot3'></span>
+    <span class="home-dot" id='home-dot4'></span>
+  </div>
 
-        <div class="home-content4-block">
-          <img
-            src="./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 3_1.png"
-            class="home-content4-img"
-          />
-          <div class="home-content4-block-bottom">
-            Royal stone – elegant dune
-          </div>
-        </div>
-
-        <div class="home-content4-block">
-          <img
-            src="./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 2_2.png"
-            class="home-content4-img"
-          />
-          <div class="home-content4-block-bottom">
-            Royal stone – elegant dune
-          </div>
-        </div>
+  <div class="home-content3 ">
+    <div class="home-content3-block wow fadeInRight  animated">
+      <div class="home-content3-block-title">Merit Stone selection</div>
+      <div class="home-content3-block-dec">
+        We are a trusted business that are passionate in providing
+        customized-made sophisticated and premium stones in the market. We
+        hold a reputation in individualizing stones cuts to according to
+        customer’s preferences.
       </div>
-      <div class="home-content4-more ">
-        <img class="" src="./img/1001602989135_.pic.jpg" />
-        <span>Learn more</span>
+      <div class="home-content3-block-more">
+        <img class="home-content3-icon" src="./img/箭头1@4x.png" /><span>Learn more</span>
       </div>
     </div>
-    <div class="home-content5 container">
-      
-      <div class="home-content5-img fadeInLeft wow animated">
+  </div>
+  </div>
+
+  <div class="home-content4 ">
+    <div class="home-content4-title fadeInDown wow animated">Project Gallery</div>
+    <div class="home-content4-dec fadeInDown wow animated">
+      We believe in developing objects with a purpose that will last for a
+      lifetime. Here are some of our favourite projects and collaborations.
+    </div>
+    <div class="home-content4-imgs fadeInLeft wow animated">
+      <div class="home-content4-block">
+        <img src="./img/pic/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x_2.png"
+          class="home-content4-img" />
+        <div class="home-content4-block-bottom">
+          Royal stone – elegant dune
+        </div>
+      </div>
+
+      <div class="home-content4-block">
+        <img src="./img/pic/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 3_1.png"
+          class="home-content4-img" />
+        <div class="home-content4-block-bottom">
+          Royal stone – elegant dune
+        </div>
+      </div>
+
+      <div class="home-content4-block">
+        <img src="./img/pic/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 2_2.png"
+          class="home-content4-img" />
+        <div class="home-content4-block-bottom">
+          Royal stone – elegant dune
+        </div>
+      </div>
+    </div>
+    <div class="home-content4-more " onclick="handleGoto('ourProjects')">
+      <img class="" src="./img/1001602989135_.pic.jpg" />
+      <span>Learn more</span>
+    </div>
+  </div>
+  <div class="home-content5 ">
+
+    <div class="home-content5-img fadeInLeft wow animated">
       <div class="home-block2" id='home-block'>
         <div class="top2" id='top'></div>
         <div class="right2" id='right'></div>
         <div class="bottom2" id='bottom'></div>
         <div class="left2" id='left'></div>
-       
+
       </div>
-      <img
-      src="./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N1@4x.png"
-    />
-        
-      </div>
-      <div class="home-content5-block fadeInRight wow animated">
-        <label> Contact us for more information about our products. </label>
-        <span><img src="./img/箭头1@4x.png" />Contact us </span>
-      </div>
+      <img src="./img/pic/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N1@4x.png" />
+
     </div>
-    <div class="login-bottom container">
-      <img class="login-logo2" src="./img/Asset 1@4x-8 3@4x.png" />
-      <span class="login-bottom-dec wow fadeInDown animated">
-        Copyright Merit Stone 2020. All Rights Reserved.
-      </span>
+    <div class="home-content5-block fadeInRight wow animated">
+      <label> Contact us for more information about our products. </label>
+      <span onclick="handleGoto('contact')"><img src="./img/箭头1@4x.png" />Contact us </span>
     </div>
+  </div>
+  <div class="login-bottom ">
+    <img class="login-logo2" src="./img/footer-icon.png" />
+    <span class="login-bottom-dec wow fadeInDown animated">
+      Copyright Merit Stone 2020. All Rights Reserved.
+    </span>
+  </div>
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/style.js"></script>
-    <script>
-      window.onscroll = function () {
-       let a = document.documentElement.scrollTop || document.body.scrollTop;//滚动条y轴上的距离
-       let b = document.documentElement.clientHeight || document.body.clientHeight;//可视区域的高度
-       let c = document.documentElement.scrollHeight || document.body.scrollHeight;//可视化的高度与溢出的距离（总高度）
-        if((a + 108) > b){
-      document.getElementsByClassName(' home-dots')[0].style.display = 'flex'
-        }else{
-      document.getElementsByClassName(' home-dots')[0].style.display = 'none'
-        }
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+  <script type="text/javascript" src="js/style.js"></script>
+  <script>
+    window.onscroll = function () {
+      let a = document.documentElement.scrollTop || document.body.scrollTop; //滚动条y轴上的距离
+      let b = document.documentElement.clientHeight || document.body.clientHeight; //可视区域的高度
+      let c = document.documentElement.scrollHeight || document.body.scrollHeight; //可视化的高度与溢出的距离（总高度）
+      if ((a + 108) > b) {
+        document.getElementsByClassName(' home-dots')[0].style.display = 'flex'
+      } else {
+        document.getElementsByClassName(' home-dots')[0].style.display = 'none'
+      }
 
-        if(a > b  && a < (2*b - 137) ){
-          document.getElementById('home-dot1').className = 'home-dotImg'
-          document.getElementById('home-dot2').className = 'home-dot'
-          document.getElementById('home-dot3').className = 'home-dot'
-          document.getElementById('home-dot4').className = 'home-dot'
-        }else if(a >= (2*b - 137)  && a < (3*b - 137)){
+      if (a > b && a < (2 * b - 137)) {
+        document.getElementById('home-dot1').className = 'home-dotImg'
+        document.getElementById('home-dot2').className = 'home-dot'
+        document.getElementById('home-dot3').className = 'home-dot'
+        document.getElementById('home-dot4').className = 'home-dot'
+      } else if (a >= (2 * b - 137) && a < (3 * b - 137)) {
 
-          document.getElementById('home-dot2').className = 'home-dotImg'
-          document.getElementById('home-dot1').className = 'home-dot'
-          document.getElementById('home-dot3').className = 'home-dot'
-          document.getElementById('home-dot4').className = 'home-dot'
-        } else if( a>= (3*b - 137)  && a < (4*b - 137)){
-document.getElementById('home-dot3').className = 'home-dotImg'
-          document.getElementById('home-dot1').className = 'home-dot'
-          document.getElementById('home-dot2').className = 'home-dot'
-          document.getElementById('home-dot4').className = 'home-dot'
-} else if(a>= (4*b - 137)  ){
-document.getElementById('home-dot4').className = 'home-dotImg'
-          document.getElementById('home-dot1').className = 'home-dot'
-          document.getElementById('home-dot2').className = 'home-dot'
-          document.getElementById('home-dot3').className = 'home-dot'
-          document.getElementById('home-block').className = 'home-block'
-          document.getElementById('top').className = 'top'
-          document.getElementById('right').className = 'right'
-          document.getElementById('bottom').className = 'bottom'
-          document.getElementById('left').className = 'left'
-}
+        document.getElementById('home-dot2').className = 'home-dotImg'
+        document.getElementById('home-dot1').className = 'home-dot'
+        document.getElementById('home-dot3').className = 'home-dot'
+        document.getElementById('home-dot4').className = 'home-dot'
+      } else if (a >= (3 * b - 137) && a < (4 * b - 137)) {
+        document.getElementById('home-dot3').className = 'home-dotImg'
+        document.getElementById('home-dot1').className = 'home-dot'
+        document.getElementById('home-dot2').className = 'home-dot'
+        document.getElementById('home-dot4').className = 'home-dot'
+      } else if (a >= (4 * b - 137)) {
+        document.getElementById('home-dot4').className = 'home-dotImg'
+        document.getElementById('home-dot1').className = 'home-dot'
+        document.getElementById('home-dot2').className = 'home-dot'
+        document.getElementById('home-dot3').className = 'home-dot'
+        document.getElementById('home-block').className = 'home-block'
+        document.getElementById('top').className = 'top'
+        document.getElementById('right').className = 'right'
+        document.getElementById('bottom').className = 'bottom'
+        document.getElementById('left').className = 'left'
+      }
 
-        
 
-       if(a> 108){
-      document.getElementsByClassName('home-menus')[0].style.background = '#000'
-       }else{
+
+      if (a > 108) {
+        document.getElementsByClassName('home-menus')[0].style.background = '#000'
+      } else {
 
         document.getElementsByClassName('home-menus')[0].style.background = 'rgba(0, 0, 0, .0001)'
-       }
-        
+      }
+
     }
-      function handleGoto(path) {
-        window.location.href = `./${path}.html`;
-      }
-      function changehomeMethod() {
-        document.getElementsByClassName("home-input-code")[0].style.display =
-          "flex";
-        document.getElementsByClassName("home-input")[0].style.display = "none";
 
-        document.getElementsByClassName("home-ver")[0].style.display = "block";
-        document.getElementsByClassName("home-pass")[0].style.display = "none";
-      }
-      function changedRegister() {
-        document.getElementsByClassName("home-panel-p2")[0].style.display =
-          "block";
-        document.getElementsByClassName("home-panel-p")[0].style.display =
-          "none";
-        document.getElementsByClassName("home-register")[0].style.borderColor =
-          "#bf9757";
-        document.getElementsByClassName("home-sign")[0].style.borderColor =
-          "#fff";
-      }
-      function handlePostion(type){
-       let b = document.documentElement.clientHeight || document.body.clientHeight;//可视区域的高度
-        if(type  === 1){
-          document.documentElement.scrollTop = 0 ;
-           document.body.scrollTop = 0;
-        }else if( type === 2){
-          document.documentElement.scrollTop = (2*b - 137);
-           document.body.scrollTop =(2*b - 137);
-        }else if(type ===3){
-          document.documentElement.scrollTop = (3*b  - 137);
-           document.body.scrollTop =  (3*b  - 137);
-        }else{
-          document.documentElement.scrollTop =  (4*b  - 137);
-           document.body.scrollTop =  (4*b  - 137);
-        }
-      }
-      function changedSign() {
-        document.getElementsByClassName("home-panel-p")[0].style.display =
-          "block";
-        document.getElementsByClassName("home-panel-p2")[0].style.display =
-          "none";
-        document.getElementsByClassName("home-sign")[0].style.borderColor =
-          "#bf9757";
-        document.getElementsByClassName("home-register")[0].style.borderColor =
-          "#fff";
-      }
-      function forgot() {
-        window.location.href = "./forgotPass.html";
-      }
-    </script>
+    function handleGoto(path) {
+      window.location.href = `./${path}.html`;
+    }
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery.marquee.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/style.js"></script>
-    <!-- <script>
-      var swiper = new Swiper(".cooperationbanner", {
-        pagination: ".swiper-pagination",
-        paginationClickable: true,
-      });
-      var swipernew = new Swiper(".customerbanner", {
-        pagination: ".swiper-pagination",
-        slidesPerView: 3,
-        paginationClickable: true,
-        spaceBetween: 30,
-        breakpoints: {
-          750: {
-            slidesPerView: 1,
-            spaceBetween: 30,
-          },
-        },
-      });
-      $(".marquee").marquee({ duration: 8000 });
-    </script> -->
+    function changehomeMethod() {
+      document.getElementsByClassName("home-input-code")[0].style.display =
+        "flex";
+      document.getElementsByClassName("home-input")[0].style.display = "none";
 
-    <script src="./js/swiper.min.js"></script>
+      document.getElementsByClassName("home-ver")[0].style.display = "block";
+      document.getElementsByClassName("home-pass")[0].style.display = "none";
+    }
 
-    <!-- Initialize Swiper -->
-    <script>
-      var mySwiper = new Swiper(".swiper-container", {
-        direction: "vertical",
-        loop: false,
+    function changedRegister() {
+      document.getElementsByClassName("home-panel-p2")[0].style.display =
+        "block";
+      document.getElementsByClassName("home-panel-p")[0].style.display =
+        "none";
+      document.getElementsByClassName("home-register")[0].style.borderColor =
+        "#bf9757";
+      document.getElementsByClassName("home-sign")[0].style.borderColor =
+        "#fff";
+    }
 
-        // 如果需要分页器
-        pagination: ".swiper-pagination",
+    function handlePostion(type) {
+      let b = document.documentElement.clientHeight || document.body.clientHeight; //可视区域的高度
+      if (type === 1) {
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      } else if (type === 2) {
+        document.documentElement.scrollTop = (2 * b - 137);
+        document.body.scrollTop = (2 * b - 137);
+      } else if (type === 3) {
+        document.documentElement.scrollTop = (3 * b - 137);
+        document.body.scrollTop = (3 * b - 137);
+      } else {
+        document.documentElement.scrollTop = (4 * b - 137);
+        document.body.scrollTop = (4 * b - 137);
+      }
+    }
 
-        // pagination: {
-        //   el: '.swiper-pagination',
-        //   type: 'fraction',
-        // },
-        // 如果需要前进后退按钮
-        nextButton: null,
-        // nextButton: '.swiper-button-next',
-        // prevButton: '.swiper-button-prev',
-        // paginationType: 'bullets',
-        // 如果需要滚动条
-        scrollbar: ".swiper-scrollbar",
-        paginationClickable: true,
-        // pagination: {
-        //   el: '.swiper-pagination',
-        //   type: 'fraction',
-        // },
-        // navigation: {
-        //   nextEl: '.swiper-button-next',
-        //   prevEl: '.swiper-button-prev',
-        // },
-      });
-    </script>
-  </body>
+    function changedSign() {
+      document.getElementsByClassName("home-panel-p")[0].style.display =
+        "block";
+      document.getElementsByClassName("home-panel-p2")[0].style.display =
+        "none";
+      document.getElementsByClassName("home-sign")[0].style.borderColor =
+        "#bf9757";
+      document.getElementsByClassName("home-register")[0].style.borderColor =
+        "#fff";
+    }
+
+    function forgot() {
+      window.location.href = "./forgotPass.html";
+    }
+  </script>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.marquee.js"></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+  <script type="text/javascript" src="js/style.js"></script>
+ 
+  <script src="./js/swiper.min.js"></script>
+
+  <script>
+    var mySwiper = new Swiper(".swiper-container", {
+      direction: "vertical",
+      loop: false,
+
+      // 如果需要分页器
+      pagination: ".swiper-pagination",
+
+      // pagination: {
+      //   el: '.swiper-pagination',
+      //   type: 'fraction',
+      // },
+      // 如果需要前进后退按钮
+      nextButton: null,
+      // nextButton: '.swiper-button-next',
+      // prevButton: '.swiper-button-prev',
+      // paginationType: 'bullets',
+      // 如果需要滚动条
+      scrollbar: ".swiper-scrollbar",
+      paginationClickable: true,
+      // pagination: {
+      //   el: '.swiper-pagination',
+      //   type: 'fraction',
+      // },
+      // navigation: {
+      //   nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev',
+      // },
+    });
+  </script>
+</body>
+
 </html>

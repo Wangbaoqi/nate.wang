@@ -1,0 +1,82 @@
+
+/* header start*/
+
+.main-header-box {
+  position: relative;
+  height: 100px;
+  /* margin-bottom: 50px; */
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #F8F8F8;
+  border-bottom: 1px solid #CDCDCD;
+  height: 100px;
+  z-index: 250;
+}
+.header-layout {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.header-logo {
+  flex: 2;
+}
+
+.logo-icon {
+  width: 85px;
+  height: 48px;
+}
+
+.header-menus {
+  margin-right: 20px;
+  font-family: 'Jost Light',sans-serif;
+}
+
+
+.menu-item {
+  color: #525358;
+  font-size: 16px;
+  margin: 0 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.item-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* header end */
+
+
+
+
+/* footer */
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #eeeeee;
+  font-size: 14px;
+  font-weight: normal;
+  color: #525358;
+  line-height: 20px;
+  padding: 20px 0;
+  font-family: 'Jost Light',sans-serif;
+}
+
+.main-footer .footer-icon {
+  height: 44px;
+  width: 60px;
+  margin-bottom: 10px;
+}

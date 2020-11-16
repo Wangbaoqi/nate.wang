@@ -1,163 +1,150 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width; initial-scale=1.0,maximum-scale=1.0,user-scalable=0"
-    />
-    <title></title>
-    <link rel="stylesheet" href="css/placeOrder.css" />
-    <link rel="stylesheet" href="css/login.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/animate2.css" />
-    <link rel="stylesheet" href="css/swiper.min.css" />
-  </head>
 
-  <body>
-    <div class="placeOrder">
-      <header class="placeOrder-header container">
-        <div class="placeOrder-bg"></div>
-        <div class="placeOrder-menus">
-          <span class="placeOrder-menu" onclick="handleGoto('ourRange')"
-            >Our range</span
-          >
-          <span class="placeOrder-menu" onclick="handleGoto('onlineStore')"
-            >Online store</span
-          >
-          <span class="placeOrder-menu" onclick="handleGoto('ourProjects')"
-            >Projects</span
-          >
-          <span class="placeOrder-menu" onclick="handleGoto('placeOrder')"
-            >placeOrder</span
-          >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <title></title>
+  <link rel="stylesheet" href="css/placeOrder.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/animate2.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+</head>
 
-          <div>
-            <img
-              class="placeOrder-logo"
-              onclick="handleGoto('ourRange')"
-              src="./img/581602630685_.pic.jpg"
-            />
-          </div>
-          <span class="placeOrder-menu" onclick="handleGoto('contact')"
-            >Contact</span
-          >
-          <span class="placeOrder-menu" onclick="handleGoto('blog')">Blog</span>
-          <span class="placeOrder-menu" onclick="handleGoto('downloadBrachure')"
-            >Download brochure</span
-          >
+<body>
+  <div class="placeOrder">
+    <header class="placeOrder-header">
+      <div class="placeOrder-bg"></div>
+      <div class="placeOrder-menus">
+        <span class="placeOrder-menu" onclick="handleGoto('ourRange')">Our range</span>
+        <span class="placeOrder-menu" onclick="handleGoto('onlineStore')">Online store</span>
+        <span class="placeOrder-menu" onclick="handleGoto('ourProjects')">Projects</span>
+        <span class="placeOrder-menu" onclick="handleGoto('placeOrder')">placeOrder</span>
 
-          <div class="placeOrder-icons">
-            <img src="./img/ICON/Group 15.png" class="placeOrder-icon" />
-            <img src="./img/ICON/Group 16.png" class="placeOrder-icon" />
-            <img src="./img/ICON/Group 17.png" class="placeOrder-icon" />
-          </div>
+        <div>
+          <img class="placeOrder-logo" onclick="handleGoto('ourRange')" src="./img/581602630685_.pic.jpg" />
         </div>
-        <div class="placeOrder-slogan">
-          <div class="placeOrder-word wow fadeInDown animated">
-            <label
-              ><img src="./img/成功@4x.png" />Thank you for your order!</label
-            >
-            <span class="placeOrder-word-dec"> Thank you. your order has been received. </span>
-            <span class="placeOrder-word-orderInfo">
-             <label> Order No：</label><span>8613456789098 </span><b></b>
-              <label>Total amount：</label><span style="font-size: 16px;">$ 899.78</span><b></b>
-              <label>Date of order：</label><span>20200304</span><b></b>
-              <label>Payment type：</label><span>Credit card</span>
-            </span>
-          </div>
-          <div class="placeOrder-block">
-            
-            <div class="top"></div>
-            <div class="right"></div>
-            <div class="bottom"></div>
-            <div class="left"></div>
-          </div>
-          
-        </div>
-        <div class="placeOrder-button wow fadeInDown animated">View order 
-        </div>
-        <div class="placeOrder-back">
-          Back to home 
-          <img class="home-content2-icon" src="./img/箭头1@4x.png"/>
-        </div>
-      </header>
-    </div>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/style.js"></script>
-    <script>
-      function changeplaceOrderMethod() {
-        document.getElementsByClassName(
-          "placeOrder-input-code"
-        )[0].style.display = "flex";
-        document.getElementsByClassName("placeOrder-input")[0].style.display =
-          "none";
+        <span class="placeOrder-menu" onclick="handleGoto('contact')">Contact</span>
+        <span class="placeOrder-menu" onclick="handleGoto('blog')">Blog</span>
+        <span class="placeOrder-menu" onclick="handleGoto('downloadBrachure')">Download brochure</span>
 
-        document.getElementsByClassName("placeOrder-ver")[0].style.display =
-          "block";
-        document.getElementsByClassName("placeOrder-pass")[0].style.display =
-          "none";
-      }
-      function changedRegister() {
-        document.getElementsByClassName(
-          "placeOrder-panel-p2"
-        )[0].style.display = "block";
-        document.getElementsByClassName("placeOrder-panel-p")[0].style.display =
-          "none";
-        document.getElementsByClassName(
-          "placeOrder-register"
-        )[0].style.borderColor = "#bf9757";
-        document.getElementsByClassName(
-          "placeOrder-sign"
-        )[0].style.borderColor = "#fff";
-      }
-      function changedSign() {
-        document.getElementsByClassName("placeOrder-panel-p")[0].style.display =
-          "block";
-        document.getElementsByClassName(
-          "placeOrder-panel-p2"
-        )[0].style.display = "none";
-        document.getElementsByClassName(
-          "placeOrder-sign"
-        )[0].style.borderColor = "#bf9757";
-        document.getElementsByClassName(
-          "placeOrder-register"
-        )[0].style.borderColor = "#fff";
-      }
-      function forgot() {
-        window.location.href = "./forgotPass.html";
-      }
-    </script>
+        <div class="placeOrder-icons">
+          <img src="./img/ICON/Group 15.png" class="placeOrder-icon" />
+          <img src="./img/ICON/Group 16.png" class="placeOrder-icon" onclick="handleGoto('myAccount')"/>
+          <img src="./img/ICON/Group 17.png" class="placeOrder-icon" />
+        </div>
+      </div>
+      <div class="placeOrder-slogan">
+        <div class="placeOrder-word wow fadeInDown animated">
+          <label><img src="./img/成功@4x.png" />Thank you for your order!</label>
+          <span class="placeOrder-word-dec"> Thank you. your order has been received. </span>
+          <span class="placeOrder-word-orderInfo">
+            <label> Order No：</label><span>8613456789098 </span><b></b>
+            <label>Total amount：</label><span style="font-size: 16px;">$ 899.78</span><b></b>
+            <label>Date of order：</label><span>20200304</span><b></b>
+            <label>Payment type：</label><span>Credit card</span>
+          </span>
+        </div>
+        <div class="placeOrder-block">
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/jquery.marquee.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/style.js"></script>
-    <script>
-      function handleGoto(path) {
-        window.location.href = `./${path}.html`;
-      }
-      var swiper = new Swiper(".cooperationbanner", {
-        pagination: ".swiper-pagination",
-        paginationClickable: true,
-      });
-      var swipernew = new Swiper(".customerbanner", {
-        pagination: ".swiper-pagination",
-        slidesPerView: 3,
-        paginationClickable: true,
-        spaceBetween: 30,
-        breakpoints: {
-          750: {
-            slidesPerView: 1,
-            spaceBetween: 30,
-          },
+          <div class="top"></div>
+          <div class="right"></div>
+          <div class="bottom"></div>
+          <div class="left"></div>
+        </div>
+
+      </div>
+      <div class="placeOrder-button wow fadeInDown animated" onclick="handleGoto('MyOrders')">
+        View order
+      </div>
+      <div class="placeOrder-back" onclick="handleGoto('ourRange')">
+        Back to home
+        <img class="home-content2-icon" src="./img/箭头1@4x.png" />
+      </div>
+    </header>
+  </div>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+  <script type="text/javascript" src="js/style.js"></script>
+  <script>
+    function changeplaceOrderMethod() {
+      document.getElementsByClassName(
+        "placeOrder-input-code"
+      )[0].style.display = "flex";
+      document.getElementsByClassName("placeOrder-input")[0].style.display =
+        "none";
+
+      document.getElementsByClassName("placeOrder-ver")[0].style.display =
+        "block";
+      document.getElementsByClassName("placeOrder-pass")[0].style.display =
+        "none";
+    }
+
+    function changedRegister() {
+      document.getElementsByClassName(
+        "placeOrder-panel-p2"
+      )[0].style.display = "block";
+      document.getElementsByClassName("placeOrder-panel-p")[0].style.display =
+        "none";
+      document.getElementsByClassName(
+        "placeOrder-register"
+      )[0].style.borderColor = "#bf9757";
+      document.getElementsByClassName(
+        "placeOrder-sign"
+      )[0].style.borderColor = "#fff";
+    }
+
+    function changedSign() {
+      document.getElementsByClassName("placeOrder-panel-p")[0].style.display =
+        "block";
+      document.getElementsByClassName(
+        "placeOrder-panel-p2"
+      )[0].style.display = "none";
+      document.getElementsByClassName(
+        "placeOrder-sign"
+      )[0].style.borderColor = "#bf9757";
+      document.getElementsByClassName(
+        "placeOrder-register"
+      )[0].style.borderColor = "#fff";
+    }
+
+    function forgot() {
+      window.location.href = "./forgotPass.html";
+    }
+  </script>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/jquery.marquee.js"></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+  <script type="text/javascript" src="js/style.js"></script>
+  <script>
+    function handleGoto(path) {
+      window.location.href = `./${path}.html`;
+    }
+    var swiper = new Swiper(".cooperationbanner", {
+      pagination: ".swiper-pagination",
+      paginationClickable: true,
+    });
+    var swipernew = new Swiper(".customerbanner", {
+      pagination: ".swiper-pagination",
+      slidesPerView: 3,
+      paginationClickable: true,
+      spaceBetween: 30,
+      breakpoints: {
+        750: {
+          slidesPerView: 1,
+          spaceBetween: 30,
         },
-      });
-      $(".marquee").marquee({ duration: 8000 });
-    </script>
-  </body>
+      },
+    });
+    $(".marquee").marquee({
+      duration: 8000
+    });
+  </script>
+</body>
+
 </html>

@@ -4,7 +4,7 @@
 .placeOrder-header {
   width: 100%;
   height: 100vh;
-  background: url("../img/图片/Bitmap2@4x-min.jpg") no-repeat;
+  background: url("../img/pic/Bitmap2@4x-min.jpg") no-repeat;
   background-size: cover;
   filter: grayscale(0.5);
 }
@@ -117,7 +117,7 @@ header {
   font-weight: 400;
   color: #fff;
   cursor: pointer;
-  font-family: Jost-Regular, Jost;
+  font-family: 'Futura Book';
 }
 .placeOrder-icon {
   width: 26px;
@@ -140,24 +140,23 @@ header {
   justify-content: center;
   position: relative;
   margin-top: 5%;
+  font-family: 'Futura Book';
 }
 
 .placeOrder-slogan div {
   font-size: 48px;
   color: #ffffff;
-  font-family: DalaFlodaWeb-Roman, DalaFlodaWeb;
 }
 .placeOrder-slogan span {
   font-size: 16px;
   color: #ffffff;
-  font-family: Jost-Regular, Jost;
+  font-family: 'Futura Book';
+
   font-weight: 300;
 }
 .placeOrder-scroll {
   font-size: 16px;
-
-  font-family: Jost-Regular, Jost;
-
+  font-family: 'Futura Book';
   font-weight: 400;
   display: flex;
   flex-direction: column;
@@ -243,8 +242,8 @@ header {
   background-size: 100% 100%;
   background-position: center;
 
-  /* background-image: url('../img/图片/3d-rendering-luxury-hotel-reception-hall-and-offic-HGUS5JJ@4x.png'); */
-  background: url("../img/图片/3d-rendering-luxury-hotel-reception-hall-and-offic-HGUS5JJ@4x.png");
+  /* background-image: url('../img/pic/3d-rendering-luxury-hotel-reception-hall-and-offic-HGUS5JJ@4x.png'); */
+  background: url("../img/pic/3d-rendering-luxury-hotel-reception-hall-and-offic-HGUS5JJ@4x.png");
   /* width: 495px;
   height: 360px; */
 }

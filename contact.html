@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width; initial-scale=1.0,maximum-scale=1.0,user-scalable=0"
-    />
-    <title></title>
-    <link rel="stylesheet" href="css/login.css" />
-    <link rel="stylesheet" href="css/contact.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/animate2.css" />
-    <link rel="stylesheet" href="css/swiper.min.css" />
-    <style>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <title></title>
+
+  <link rel="stylesheet" href="css/header.css" />
+
+
+
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/animate2.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <style>
     .swiper-container {
-    width: 100%;
-}  
+      width: 100%;
+    }
+
     .swiper-slide {
       font-size: 18px;
       display: -webkit-box;
@@ -32,216 +36,220 @@
       -webkit-align-items: center;
       align-items: center;
     }
-    </style>
-  </head>
+  </style>
+</head>
 
-  <body>
-    <div class="login">
-      <header class="login-header">
-       
-        <div class="login-img"><img class="login-logo" onclick="handleGoto('ourRange')"  src="./img/Asset 1@4x-8 2@4x.png" /></div>
-        <div class="login-menus">
-          <span class="login-menu" onclick="handleGoto('ourRange')" >Our range</span>
-          <span class="login-menu" onclick="handleGoto('onlineStore')" >Online store</span>
-          <span class="login-menu" onclick="handleGoto('ourProjects')" >Projects</span>
-          <span class="login-menu" onclick="handleGoto('about')" >About</span>
-          <span class="login-menu" onclick="handleGoto('contact')" >Contact</span>
-          <span class="login-menu" onclick="handleGoto('blog')" >Blog</span>
-          <span class="login-menu" onclick="handleGoto('downloadBrochure')" >Download brochure</span>
-        </div>
-        <div class="login-icons">
-          <img src="./img/ICON/Group 13.png" class="login-icon" />
-          <img src="./img/ICON/Group 12.png" class="login-icon" />
-          <img src="./img/ICON/Group 11.png" class="login-icon" />
+<body>
+
+  <div class="contact-container">
+    <!-- header -->
+    <div class="main-header-box">
+      <header class="main-header">
+        <div class="container header-layout">
+          <div class="header-logo">
+            <img class="logo-icon" onclick="handleGoto('ourRange')" src="./img/site-icon.png" />
+          </div>
+          <nav class="header-menus">
+            <span class="menu-item" onclick="handleGoto('ourRange')">Our range</span>
+            <span class="menu-item" onclick="handleGoto('onlineStore')">Online store</span>
+            <span class="menu-item" onclick="handleGoto('ourProjects')">Projects</span>
+            <span class="menu-item" onclick="handleGoto('about')">About</span>
+            <span class="menu-item" onclick="handleGoto('contact')">Contact</span>
+            <span class="menu-item" onclick="handleGoto('blog')">Blog</span>
+            <span class="menu-item" onclick="handleGoto('downloadBrochure')">Download brochure</span>
+          </nav>
+          <span class="header-icons">
+            <img src="./img/ICON/shop-icon.png" class="item-icon" />
+            <img src="./img/ICON/my-icon.png" class="item-icon" onclick="handleGoto('myAccount')"/>
+            <img src="./img/ICON/search-icon.png" class="item-icon" />
+          </span>
         </div>
       </header>
-      <div class="contact-content">
-        <div class="contact-title wow fadeInDown animated" >Contact us</div>
-        <div class="contact-dec wow fadeInDown animated">
-          If you have any questions, please feel free to contact us
-        </div>
-        <div class="contact-panel">
-          <div class="contact-block">
-            <div class="swiper-container wow fadeInLeft animated">
-              <div class="swiper-wrapper">
-                  <div class="swiper-slide">  <img
-                    class="contact-block-img   "
-                    src="./img/图片/Bitmap4@4x 3.png"
-                  />
-                  </div>
-                  <div class="swiper-slide">  <img
-                    class="contact-block-img   "
-                    src="./img/图片/Bitmap@4x 2_2.png"
-                  /></div>
-                  <div class="swiper-slide">  <img
-                    class="contact-block-img   "
-                    src="./img/图片/Bitmap3@4x 2.png"
-                  /></div>
-              </div>
-              <div class="swiper-pagination"></div>
-              
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-              
-              <div class="swiper-scrollbar"></div>
-              </div>
-            <!-- <img class="contact-block-img wow fadeInLeft animated"  src="./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x_3.png" /> -->
-            <div class="contact-row contact-row-between">
-              <label>Melboune</label>
-             
-              <label><img src='./img/map (1)@4x.png' class="contact-row-smallicon"/> Google map</label>
-            </div>
 
-            <div class="contact-row wow fadeInDown animated">
-              <b> 55-57 Hallam south re hallam （ stone pavilion）</b>
-            </div>
-
-            <div class="contact-row wow fadeInDown animated ">
-              <img class="contact-row-icon" src="./img/Group 6@4x.png" />
-              <span class="contact-row-title">Telephone</span>
-              <span class="contact-row-word">03 9544 1132</span>
-            </div>
-            <div class="contact-row wow fadeInDown animated">
-              <img class="contact-row-icon" src="./img/Group 7@4x.png" />
-              <span class="contact-row-title">Email</span>
-              <span class="contact-row-word">dukahsontrading@gmail.com</span>
-            </div>
-            <div class="contact-row wow fadeInDown animated">
-              <img class="contact-row-icon" src="./img/Group 8@4x.png" />
-              <span class="contact-row-title">Hours</span>
-              <span class="contact-row-word"
-                >Monday-Saturday 09:00-17:30 Sunday:apponitment
-              </span>
-            </div>
-            <div class="contact-button "></div>
+      <main >
+        <div class="contact-content">
+          <div class="contact-title wow fadeInDown animated">Contact us</div>
+          <div class="contact-dec wow fadeInDown animated">
+            If you have any questions, please feel free to contact us
           </div>
-          <div class="contact-block ">
-            <div class="swiper-container wow fadeInRight animated">
-              <div class="swiper-wrapper">
-                  <div class="swiper-slide">  <img
-                    class="contact-block-img   "
-                    src="./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 2_3.png"
-                  />
+          <div class="contact-panel">
+            <div class="contact-block">
+              <div class="swiper-container wow fadeInLeft animated">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"> <img class="contact-block-img   " src="./img/pic/Bitmap4@4x 3.png" />
                   </div>
-                  <div class="swiper-slide">  <img
-                    class="contact-block-img   "
-                    src="./img/图片/Bitmap@4x 6.png"
-                  /></div>
-                  <div class="swiper-slide">  <img
-                    class="contact-block-img   "
-                    src="./img/图片/Bitmap@4x_1.png"
-                  /></div>
+                  <div class="swiper-slide"> <img class="contact-block-img   " src="./img/pic/Bitmap@4x 2_2.png" /></div>
+                  <div class="swiper-slide"> <img class="contact-block-img   " src="./img/pic/Bitmap3@4x 2.png" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+    
+                <div class="swiper-button-prev arrow-button-prev"></div>
+                <div class="swiper-button-next arrow-button-next"></div>
+    
+                <div class="swiper-scrollbar"></div>
               </div>
-              <div class="swiper-pagination"></div>
-              
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-              
-              <div class="swiper-scrollbar"></div>
+              <!-- <img class="contact-block-img wow fadeInLeft animated"  src="./img/pic/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x_3.png" /> -->
+              <div class="contact-row contact-row-between">
+                <label >Melboune</label>
+    
+                <label>
+                  <img src='./img/map (1)@4x.png' class="contact-row-smallicon" /> 
+                  <span>Google map</span> 
+                </label>
               </div>
-            <!-- <img
-              class="contact-block-img wow fadeInDown animated"
-              src="./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 2_3.png"
-            /> -->
-			<div class="contact-row contact-row-between">
-				<label>Melboune</label>
-				<label><img src='./img/map (1)@4x.png' class="contact-row-smallicon"/> Google map</label>
-			  </div>
-  
-			  <div class="contact-row wow fadeInDown animated">
-				<b> 55-57 Hallam south re hallam （ stone pavilion）</b>
-			  </div>
-  
-			  <div class="contact-row wow fadeInDown animated">
-				<img class="contact-row-icon" src="./img/Group 6@4x.png" />
-				<span class="contact-row-title">Telephone</span>
-				<span class="contact-row-word">03 9544 1132</span>
-			  </div>
-			  <div class="contact-row wow fadeInDown animated">
-				<img class="contact-row-icon" src="./img/Group 7@4x.png" />
-				<span class="contact-row-title">Email</span>
-				<span class="contact-row-word">dukahsontrading@gmail.com</span>
-			  </div>
-			  <div class="contact-row  wow fadeInDown animated">
-				<img class="contact-row-icon" src="./img/Group 8@4x.png" />
-				<span class="contact-row-title">Hours</span>
-				<span class="contact-row-word"
-				  >Monday-Saturday 09:00-17:30 Sunday:apponitment
-				</span>
-			  </div>
-			  <div class="contact-button"></div>
+    
+              <div class="contact-row wow fadeInDown animated">
+                <b> 55-57 Hallam south re hallam （ stone pavilion）</b>
+              </div>
+    
+              <div class="contact-row wow fadeInDown animated ">
+                <img class="contact-row-icon" src="./img/Group 6@4x.png" />
+                <span class="contact-row-title">Telephone</span>
+                <span class="contact-row-word">03 9544 1132</span>
+              </div>
+              <div class="contact-row wow fadeInDown animated">
+                <img class="contact-row-icon" src="./img/Group 7@4x.png" />
+                <span class="contact-row-title">Email</span>
+                <span class="contact-row-word">dukahsontrading@gmail.com</span>
+              </div>
+              <div class="contact-row wow fadeInDown animated">
+                <img class="contact-row-icon" src="./img/Group 8@4x.png" />
+                <span class="contact-row-title">Hours</span>
+                <span class="contact-row-word">Monday-Saturday 09:00-17:30 Sunday:apponitment
+                </span>
+              </div>
+              <div class="contact-button" onclick="handleGoto('bookAppointment')"></div>
+            </div>
+            <div class="contact-block ">
+              <div class="swiper-container wow fadeInRight animated">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"> <img class="contact-block-img   "
+                      src="./img/pic/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 2_3.png" />
+                  </div>
+                  <div class="swiper-slide"> <img class="contact-block-img   " src="./img/pic/Bitmap@4x 6.png" /></div>
+                  <div class="swiper-slide"> <img class="contact-block-img   " src="./img/pic/Bitmap@4x_1.png" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+    
+                <div class="swiper-button-prev arrow-button-prev"></div>
+                <div class="swiper-button-next arrow-button-next"></div>
+    
+                <div class="swiper-scrollbar"></div>
+              </div>
+              <!-- <img
+                  class="contact-block-img wow fadeInDown animated"
+                  src="./img/pic/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 2_3.png"
+                /> -->
+              <div class="contact-row contact-row-between">
+                <label>Melboune</label>
+                <label>
+                  <img src='./img/map (1)@4x.png' class="contact-row-smallicon" /> 
+                  <span>Google map</span> 
+                </label>
+              </div>
+    
+              <div class="contact-row wow fadeInDown animated">
+                <b> 55-57 Hallam south re hallam （ stone pavilion）</b>
+              </div>
+    
+              <div class="contact-row wow fadeInDown animated">
+                <img class="contact-row-icon" src="./img/Group 6@4x.png" />
+                <span class="contact-row-title">Telephone</span>
+                <span class="contact-row-word">03 9544 1132</span>
+              </div>
+              <div class="contact-row wow fadeInDown animated">
+                <img class="contact-row-icon" src="./img/Group 7@4x.png" />
+                <span class="contact-row-title">Email</span>
+                <span class="contact-row-word">dukahsontrading@gmail.com</span>
+              </div>
+              <div class="contact-row  wow fadeInDown animated">
+                <img class="contact-row-icon" src="./img/Group 8@4x.png" />
+                <span class="contact-row-title">Hours</span>
+                <span class="contact-row-word">Monday-Saturday 09:00-17:30 Sunday:apponitment
+                </span>
+              </div>
+              <div class="contact-button" onclick="handleGoto('bookAppointment')"></div>
+            </div>
+          </div>
         </div>
-        </div>
-      </div>
+      </main>
 
-      <div class="login-bottom">
-        <img class="login-logo2" src="./img/Asset 1@4x-8 3@4x.png" />
-        <span class="login-bottom-dec wow fadeInDown animated">
+
+      <footer class="main-footer">
+        <img class="footer-icon" src="./img/footer-icon.png" />
+        <p class="login-bottom-dec wow fadeInDown animated">
           Copyright Merit Stone 2020. All Rights Reserved.
-        </span>
-      </div>
+        </p>
+      </footer>
     </div>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/style.js"></script>
 
-    <script type="text/javascript" src="js/style.js"></script> <script src="./js/swiper.min.js"></script>
+
+
+  </div>
+
+
+  
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+  <script type="text/javascript" src="js/style.js"></script>
+
+  <script type="text/javascript" src="js/style.js"></script>
+  <script src="./js/swiper.min.js"></script>
 
   <!-- Initialize Swiper -->
-  <script>      
-
-  window.onload = (() => {
-document.getElementsByClassName('swiper-container')[0].onmouseover = function(){
-  document.getElementsByClassName('swiper-button-next')[0].style.display = 'block'
-  document.getElementsByClassName('swiper-button-prev')[0].style.display = 'block'
-}
-document.getElementsByClassName('swiper-container')[0].onmouseout = function(){
-  document.getElementsByClassName('swiper-button-next')[0].style.display = 'none'
-  document.getElementsByClassName('swiper-button-prev')[0].style.display = 'none'
-}
-
-
-document.getElementsByClassName('swiper-container')[1].onmouseover = function(){
-  document.getElementsByClassName('swiper-button-next')[1].style.display = 'block'
-  document.getElementsByClassName('swiper-button-prev')[1].style.display = 'block'
-}
-document.getElementsByClassName('swiper-container')[1].onmouseout = function(){
-  document.getElementsByClassName('swiper-button-next')[1].style.display = 'none'
-  document.getElementsByClassName('swiper-button-prev')[1].style.display = 'none'
-}
-  }
-  )  
+  <script>
+    window.onload = (() => {
+      document.getElementsByClassName('swiper-container')[0].onmouseover = function () {
+        document.getElementsByClassName('swiper-button-next')[0].style.display = 'block'
+        document.getElementsByClassName('swiper-button-prev')[0].style.display = 'block'
+      }
+      document.getElementsByClassName('swiper-container')[0].onmouseout = function () {
+        document.getElementsByClassName('swiper-button-next')[0].style.display = 'none'
+        document.getElementsByClassName('swiper-button-prev')[0].style.display = 'none'
+      }
 
 
-window.onscroll = function () {
-       let a = document.documentElement.scrollTop || document.body.scrollTop;//滚动条y轴上的距离
-       let b = document.documentElement.clientHeight || document.body.clientHeight;//可视区域的高度
-       let c = document.documentElement.scrollHeight || document.body.scrollHeight;//可视化的高度与溢出的距离（总高度）
-       if(a> 108){
-      document.getElementsByClassName('login-header')[0].style.bottomBorder = '1px solid #cdcdcd'
-      document.getElementsByClassName('login-header')[0].style.boxShadow = '0 0 4px  #808080'
-      
-       }else{
-        document.getElementsByClassName('login-header')[0].style.border = 'none'
-      document.getElementsByClassName('login-header')[0].style.boxShadow = 'none'
-       }
-    }
-    var mySwiper = new Swiper ('.swiper-container', {
+      document.getElementsByClassName('swiper-container')[1].onmouseover = function () {
+        document.getElementsByClassName('swiper-button-next')[1].style.display = 'block'
+        document.getElementsByClassName('swiper-button-prev')[1].style.display = 'block'
+      }
+      document.getElementsByClassName('swiper-container')[1].onmouseout = function () {
+        document.getElementsByClassName('swiper-button-next')[1].style.display = 'none'
+        document.getElementsByClassName('swiper-button-prev')[1].style.display = 'none'
+      }
+    })
+
+
+    // window.onscroll = function () {
+    //   let a = document.documentElement.scrollTop || document.body.scrollTop; //滚动条y轴上的距离
+    //   let b = document.documentElement.clientHeight || document.body.clientHeight; //可视区域的高度
+    //   let c = document.documentElement.scrollHeight || document.body.scrollHeight; //可视化的高度与溢出的距离（总高度）
+    //   if (a > 108) {
+    //     document.getElementsByClassName('login-header')[0].style.bottomBorder = '1px solid #cdcdcd'
+    //     document.getElementsByClassName('login-header')[0].style.boxShadow = '0 0 4px  #808080'
+
+    //   } else {
+    //     document.getElementsByClassName('login-header')[0].style.border = 'none'
+    //     document.getElementsByClassName('login-header')[0].style.boxShadow = 'none'
+    //   }
+    // }
+    var mySwiper = new Swiper('.swiper-container', {
       direction: 'horizontal',
       loop: false,
-      
-      
+
+
       // 如果需要前进后退按钮
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
       paginationType: 'fraction',
       // 如果需要滚动条
       scrollbar: '.swiper-scrollbar',
-    })        
-    
-      function handleGoto(path) {
-        window.location.href = `./${path}.html`;
-      }
-    </script>
+    })
+
+    function handleGoto(path) {
+      window.location.href = `./${path}.html`;
+    }
+  </script>
+
 </html>

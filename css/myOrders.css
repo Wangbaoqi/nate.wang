@@ -1,6 +1,14 @@
+
+
+.myorders-container {
+  background-color: #f8f8f8;
+  padding: 2% 0 20%;
+  font-family: 'Futura Book';
+}
+
 .myOrders-content {
   display: flex;
-  padding: 5% 5% 10% 5%;
+  padding: 40px;
 }
 .myOrders-content-left {
   display: flex;
@@ -8,27 +16,33 @@
   width: 10%;
 }
 .myOrders-content-right {
-  margin-left: 5%;
   width: 85%;
+  margin-left: 5%;
 }
+
+
+
+
 .myOrders-content-left label {
   font-size: 18px;
-  font-family: Jost-Regular, Jost;
+  font-family: 'Futura Book', 'Futura Medium', sans-serif;
   font-weight: 400;
   color: #000000;
   line-height: 26px;
-  margin-bottom: 50%;
+  margin-bottom: 40%;
 }
 .myOrders-content-left span {
   font-size: 14px;
-  font-family: FuturaBT-Light, FuturaBT;
+  font-family: 'Futura Book', 'Futura Medium', sans-serif;
   font-weight: 300;
   color: #000000;
   line-height: 42px;
+  cursor: pointer;
 }
 .myOrders-content-right label {
   font-size: 18px;
-  font-family: Jost-Regular, Jost;
+  font-family: 'Futura Book', 'Futura Medium', sans-serif;
+
   font-weight: 400;
   color: #000000;
   line-height: 26px;
@@ -40,40 +54,84 @@
 }
 .myOrders-content-right td {
   font-size: 12px;
-  font-family: FuturaBT-Light, FuturaBT;
+  font-family: 'Futura Book', 'Futura Medium', sans-serif;
   font-weight: 300;
   color: #000000;
   border: none;
   border-top: 1px solid #bfbfbf;
   padding: 20px 8px;
 }
+
+.myOrders-content-right td a{
+  color: #000000;
+}
+
 .myOrders-content-td {
   height: 100px;
+  vertical-align: top;
+}
+
+.status-btn {
+  text-align: right;
+  padding-right: 80px !important;
+}
+
+.myOrders-content-td .myorders-status {
+  margin-bottom: 30px;
+  text-align: right;
+  margin-right: 77px;
 }
 .myOrders-content-td img {
   width: 72px;
   height: 72px;
   margin-right: 8px;
+  border: 1px solid #cdcdcd;
+  padding: 5px;
+  border-radius: 8px;
 }
 .myOrders-content-cancel {
+  display: inline-block;
   width: 100px;
   height: 39px;
+  line-height: 39px;
+  text-align: center;
   border: 1px solid #bfbfbf;
+  background: #ffffff;
+  font-family: 'Futura Book', 'Futura Medium', sans-serif;
+  cursor: pointer;
 }
 .myOrders-content-pay {
+  display: inline-block;
   width: 100px;
   height: 39px;
+  line-height: 39px;
+  text-align: center;
   background: #d8d1c7;
   border: none;
   margin-left: 16px;
+  font-family: 'Futura Book', 'Futura Medium', sans-serif;
+  cursor: pointer;
 }
-.myOrders-content-selectd {
+.myOrders-content-selected {
   border-bottom: 1px solid #bf9757;
-  color: #bf9757;
-  width: 65px;
+  color: #bf9757 !important;
+  width: 75%;
 }
+
+.myOrders-content-selected em{
+  display: inline-block;
+  height: 6px;
+  width: 10px;
+  background: url('../img/arrow-up.png') no-repeat;
+  background-size: 10px 6px;
+  margin-right: -20px;
+}
+
+
 .myOrders-content-right-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+

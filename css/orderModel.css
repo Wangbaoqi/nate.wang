@@ -1,0 +1,82 @@
+
+.cancel-model {
+  display: none;
+}
+
+.cancel-model-show {
+  display: block;
+}
+
+
+.cancel-model .mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 300;
+}
+
+
+.cancel-model .mask-content {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 509px;
+  background: #F7F6F4;
+  border-radius: 15px;
+  border: 1px solid #E3E3E3;
+  z-index: 350;
+  padding: 40px 30px;
+  text-align: center;
+  font-family: 'Futura Book', 'Futura Medium', sans-serif;
+}
+
+.mask-content .close-icon {
+  height: 27px;
+  width: 27px;
+  background: url('../img/close-circle.png');
+  background-size: 100%;
+  margin-top: -15px;
+}
+
+.mask-content .cancel-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333333;
+  line-height: 24px;
+}
+
+.mask-content .cancel-tip {
+  font-size: 15px;
+  font-weight: normal;
+  color: #525358;
+  line-height: 18px;
+  margin: 30px 0;
+}
+
+.mask-content .cancel-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.cancel-btn .btn {
+  width: 123px;
+  height: 39px;
+  line-height: 39px;
+  border: 1px solid #BFBFBF;
+  margin-right: 40px;
+}
+.cancel-btn .btn:last-child {
+  margin-right: 0;
+}
+
+.cancel-btn .confirm {
+  background-color: #ffffff;
+}
+
+.cancel-btn .cancel {
+  background-color: #D8D1C7;
+}

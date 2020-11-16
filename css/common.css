@@ -1,40 +1,85 @@
 .clearfix:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-  .pr {
-    position: relative;
-  }
-  body,
-  ol,
-  ul,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  th,
-  td,
-  dl,
-  dd,
-  form,
-  fieldset,
-  legend,
-  input,
-  textarea,
-  select {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    background: #FFFFFF;
-    -webkit-text-size-adjust: 100%;
-    font-family: "Microsoft YaHei", "PingFang SC";
-    overflow-x: hidden;
-  }
-  input:focus {
-    outline: none;
-  }
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.pr {
+  position: relative;
+}
+
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  background: #FFFFFF;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Microsoft YaHei", "PingFang SC";
+  overflow-x: hidden;
+}
+
+input:focus {
+  outline: none;
+}
+
+
+
+
+/* background */
+
+.bg-grey {
+  background: #EEEEEE;
+}
+
+
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+
+/* font */
+
+
+@font-face {
+  font-family: 'Futura Book';
+  src: url('../font/Futura-Book.ttf');
+}
+
+@font-face {
+  font-family: 'Futura Medium';
+  src: url('../font/Futura-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Jost Light';
+  src: url('../font/Jost-Light.ttf');
+}

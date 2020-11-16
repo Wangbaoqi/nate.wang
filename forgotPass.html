@@ -1,229 +1,196 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width; initial-scale=1.0,maximum-scale=1.0,user-scalable=0"
-    />
-    <title></title>
-    <link rel="stylesheet" href="css/login.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/swiper.min.css" />
-    <!-- <link rel="stylesheet/less" type="text/css" href="less.less" />
-    <script type="text/javascript">
-      less = {
-        env: "development",
-        async: false,
-        fileAsync: false,
-        poll: 1000,
-        functions: {},
-        dumpLineNumbers: "comments",
-        relativeUrls: false,
-        rootpath: ":/a.com/",
-      };
-    </script>
-    <script src="./dist/less.min.js"></script> -->
-  </head>
 
-  <body>
-    <div class="login">
-      <header class="login-header">
-       
-        <div class="login-img"><img class="login-logo" onclick="handleGoto('ourRange')"  src="./img/Asset 1@4x-8 2@4x.png" /></div>
-        <div class="login-menus">
-          <span class="login-menu" onclick="handleGoto('ourRange')" >Our range</span>
-          <span class="login-menu" onclick="handleGoto('onlineStore')" >Online store</span>
-          <span class="login-menu" onclick="handleGoto('ourProjects')" >Projects</span>
-          <span class="login-menu" onclick="handleGoto('about')" >About</span>
-          <span class="login-menu" onclick="handleGoto('contact')" >Contact</span>
-          <span class="login-menu" onclick="handleGoto('blog')" >Blog</span>
-          <span class="login-menu" onclick="handleGoto('downloadBrochure')" >Download brochure</span>
-        </div>
-        <div class="login-icons">
-          <img src="./img/ICON/Group 13.png" class="login-icon" />
-          <img src="./img/ICON/Group 12.png" class="login-icon" />
-          <img src="./img/ICON/Group 11.png" class="login-icon" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <title></title>
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+</head>
+
+<body>
+
+  <div class="login-box">
+
+    <!-- header -->
+    <div class="main-header-box">
+      <header class="main-header">
+        <div class="container header-layout">
+          <div class="header-logo">
+            <img class="logo-icon" onclick="handleGoto('ourRange')" src="./img/site-icon.png" />
+          </div>
+          <nav class="header-menus">
+            <span class="menu-item" onclick="handleGoto('ourRange')">Our range</span>
+            <span class="menu-item" onclick="handleGoto('onlineStore')">Online store</span>
+            <span class="menu-item" onclick="handleGoto('ourProjects')">Projects</span>
+            <span class="menu-item" onclick="handleGoto('about')">About</span>
+            <span class="menu-item" onclick="handleGoto('contact')">Contact</span>
+            <span class="menu-item" onclick="handleGoto('blog')">Blog</span>
+            <span class="menu-item" onclick="handleGoto('downloadBrochure')">Download brochure</span>
+          </nav>
+          <span class="header-icons">
+            <img src="./img/ICON/shop-icon.png" class="item-icon" />
+            <img src="./img/ICON/my-icon.png" class="item-icon" onclick="handleGoto('myAccount')"/>
+            <img src="./img/ICON/search-icon.png" class="item-icon" />
+          </span>
         </div>
       </header>
     </div>
-      <div class="login-change2 wow fadeInDown animated">
-        <div class="login-forgotPass" onclick="changedRegister()">Forgotten your password?</div>
-      </div>
-
-      <div class="login-change2 login-change3">
-        <div class="login-forgotPass" onclick="changedRegister()">Reset your password?</div>
-      </div>
-
-      <div class="login-panel">
-        <div class="login-panel-pForgot">
-          <div class="login-text wow fadeInDown animated">
-            <span class="login-label">Phone Number</span>
-            <span class="login-label-s" onclick="changeLoginMethod()"
-              ></span
-            >
-          </div>
-
-          <div class="login-input-code ">
-            <input
-              placeholder="Enter your phone number"
-              class="login-input2 "
-              type="text"
-            />
-            <span class="login-input-code-text">Get code</span>
-          </div>
-
-          <div class="login-input">
-            <input
-              placeholder="Enter your phone number"
-              class="login-input2"
-              type="text"
-            />
-          </div>
 
 
-          <div class="login-pass">
-            <div class="login-text">
-              <span class="login-label wow fadeInDown animated">Verification code</span>
+    <main class="login-content">
+      <div class="container">
+        <div class="login-change2 wow fadeInDown animated">
+          <div class="login-forgotPass" onclick="changedRegister()">Forgotten your password?</div>
+        </div>
+    
+        <div class="login-change2 login-change3">
+          <div class="login-forgotPass" onclick="changedRegister()">Reset your password?</div>
+        </div>
+    
+        <div class="login-panel">
+          <div class="login-panel-pForgot">
+            <div class="login-text wow fadeInDown animated">
+              <span class="login-label">Phone Number*</span>
+              <span class="login-label-s" onclick="changeLoginMethod()"></span>
             </div>
-
+    
+            <div class="login-input-code ">
+              <input placeholder="Enter your phone number" class="login-input2 " type="text" />
+              <span class="login-input-code-text">Get code</span>
+            </div>
+    
             <div class="login-input">
-              <input
-                placeholder="Enter your password"
-                class="login-input2"
-                type="password"
-              />
+              <input placeholder="Enter your phone number" class="login-input2" type="text" />
+              <span class="login-input-code-text">Get code</span>
             </div>
+    
+            <div class="login-pass">
+              <div class="login-text">
+                <span class="login-label wow fadeInDown animated">Verification code*</span>
+              </div>
+    
+              <div class="login-input">
+                <input placeholder="Enter your password" class="login-input2" type="password" />
+              </div>
+            </div>
+            <button class="login-button" onclick="handleNext()">Next</button>
           </div>
-         
-
-     
-        <button class="login-button" onclick="handleNext()">Next</button>
-      </div>
-      </div>
-
-
-
-      <div class="login-panel login-panel2">
-        <div class="login-panel-pForgot">
-          <div class="login-text">
-            <span class="login-label">Password</span>
-            <span class="login-label-s" onclick="changeLoginMethod()"
-              ></span
-            >
-          </div>
-
-          <div class="login-input-code">
-            <input
-              placeholder="Enter your phone number"
-              class="login-input2"
-              type="text"
-            />
-          </div>
-
-          <div class="login-input">
-            <input
-              placeholder="Enter your phone number"
-              class="login-input2"
-              type="text"
-            />
-          </div>
-
-
-          <div class="login-pass">
+        </div>
+    
+        <div class="login-panel login-panel2">
+          <div class="login-panel-pForgot">
             <div class="login-text">
-              <span class="login-label">Confirm password</span>
+              <span class="login-label">Password</span>
+              <span class="login-label-s" onclick="changeLoginMethod()"></span>
             </div>
-
+    
+            <div class="login-input-code">
+              <input placeholder="Enter your phone number" class="login-input2" type="text" />
+            </div>
+    
             <div class="login-input">
-              <input
-                placeholder="Enter your password"
-                class="login-input2"
-                type="password"
-              />
+              <input placeholder="Enter your phone number" class="login-input2" type="text" />
             </div>
+    
+    
+            <div class="login-pass">
+              <div class="login-text">
+                <span class="login-label">Confirm password*</span>
+              </div>
+    
+              <div class="login-input">
+                <input placeholder="Enter your password" class="login-input2" type="password" />
+              </div>
+            </div>
+    
+    
+            <button class="login-button">Reset password*</button>
           </div>
-         
-     
-        <button class="login-button">Reset password</button>
+        </div>
       </div>
-    </div>
-    </div>
-      
+    </main>
 
-
-      <div class="login-bottom">
-        <img class="login-logo2" src="./img/Asset 1@4x-8 3@4x.png" />
-        <span class="login-bottom-dec wow fadeInDown animated">
-          Copyright Merit Stone 2020. All Rights Reserved.
-        </span>
-      </div>
-    </div>
+    <footer class="main-footer">
+      <img class="footer-icon" src="./img/footer-icon.png" />
+      <p class="login-bottom-dec wow fadeInDown animated">
+        Copyright Merit Stone 2020. All Rights Reserved.
+      </p>
+    </footer>
   </div>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/style.js"></script>
-    <script>
 
-window.onscroll = function () {
-       let a = document.documentElement.scrollTop || document.body.scrollTop;//滚动条y轴上的距离
-       let b = document.documentElement.clientHeight || document.body.clientHeight;//可视区域的高度
-       let c = document.documentElement.scrollHeight || document.body.scrollHeight;//可视化的高度与溢出的距离（总高度）
-       if(a> 108){
-      document.getElementsByClassName('login-header')[0].style.bottomBorder = '1px solid #cdcdcd'
-      document.getElementsByClassName('login-header')[0].style.boxShadow = '0 0 4px  #808080'
-      
-       }else{
-        document.getElementsByClassName('login-header')[0].style.border = 'none'
-      document.getElementsByClassName('login-header')[0].style.boxShadow = 'none'
-       }
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+  <script type="text/javascript" src="js/style.js"></script>
+  <script>
+    // window.onscroll = function () {
+    //   let a = document.documentElement.scrollTop || document.body.scrollTop; //滚动条y轴上的距离
+    //   let b = document.documentElement.clientHeight || document.body.clientHeight; //可视区域的高度
+    //   let c = document.documentElement.scrollHeight || document.body.scrollHeight; //可视化的高度与溢出的距离（总高度）
+    //   if (a > 108) {
+    //     document.getElementsByClassName('login-header')[0].style.bottomBorder = '1px solid #cdcdcd'
+    //     document.getElementsByClassName('login-header')[0].style.boxShadow = '0 0 4px  #808080'
+
+    //   } else {
+    //     document.getElementsByClassName('login-header')[0].style.border = 'none'
+    //     document.getElementsByClassName('login-header')[0].style.boxShadow = 'none'
+    //   }
+    // }
+
+    function handleNext() {
+
+
+      document.getElementsByClassName("login-change2")[0].style.display = "none";
+      document.getElementsByClassName("login-change3")[0].style.display = "flex";
+      document.getElementsByClassName("login-panel")[0].style.display = "none";
+      document.getElementsByClassName("login-panel2")[0].style.display = "flex";
+
     }
-      function handleNext(){
 
+    function changeLoginMethod() {
 
-        document.getElementsByClassName("login-change2")[0].style.display = "none";
-        document.getElementsByClassName("login-change3")[0].style.display = "flex";
-        document.getElementsByClassName("login-panel")[0].style.display = "none";
-        document.getElementsByClassName("login-panel2")[0].style.display = "flex";
-        
-      }
-      function changeLoginMethod() {
-        
-        document.getElementsByClassName("login-input-code")[0].style.display =
-          "flex";
-        document.getElementsByClassName("login-input")[0].style.display =
-          "none";
+      document.getElementsByClassName("login-input-code")[0].style.display =
+        "flex";
+      document.getElementsByClassName("login-input")[0].style.display =
+        "none";
 
-        document.getElementsByClassName("login-ver")[0].style.display = "block";
-        document.getElementsByClassName("login-pass")[0].style.display = "none";
-      }
-      function changedRegister() {
-        document.getElementsByClassName("login-panel-p2")[0].style.display =
-          "block";
-        document.getElementsByClassName("login-panel-p")[0].style.display =
-          "none";
-        document.getElementsByClassName("login-register")[0].style.borderColor =
-          "#bf9757";
-        document.getElementsByClassName("login-sign")[0].style.borderColor =
-          "#fff";
-          
-      }
-      function changedSign() {
-        document.getElementsByClassName("login-panel-p")[0].style.display =
-          "block";
-        document.getElementsByClassName("login-panel-p2")[0].style.display =
-          "none";
-        document.getElementsByClassName("login-sign")[0].style.borderColor =
-          "#bf9757";
-        document.getElementsByClassName("login-register")[0].style.borderColor =
-          "#fff";
-          
-      }
-      function handleGoto(path) {
-        window.location.href = `./${path}.html`;
-      }
-    </script>
-  </body>
+      document.getElementsByClassName("login-ver")[0].style.display = "block";
+      document.getElementsByClassName("login-pass")[0].style.display = "none";
+    }
+
+    function changedRegister() {
+      document.getElementsByClassName("login-panel-p2")[0].style.display =
+        "block";
+      document.getElementsByClassName("login-panel-p")[0].style.display =
+        "none";
+      document.getElementsByClassName("login-register")[0].style.borderColor =
+        "#bf9757";
+      document.getElementsByClassName("login-sign")[0].style.borderColor =
+        "#fff";
+
+    }
+
+    function changedSign() {
+      document.getElementsByClassName("login-panel-p")[0].style.display =
+        "block";
+      document.getElementsByClassName("login-panel-p2")[0].style.display =
+        "none";
+      document.getElementsByClassName("login-sign")[0].style.borderColor =
+        "#bf9757";
+      document.getElementsByClassName("login-register")[0].style.borderColor =
+        "#fff";
+
+    }
+
+    function handleGoto(path) {
+      window.location.href = `./${path}.html`;
+    }
+  </script>
+</body>
+
 </html>

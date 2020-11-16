@@ -20,3 +20,20 @@
     top: 20px;
   }
 }
+
+
+
+/* rotate 180deg */
+
+.rotateHalf {
+  -webkit-animation-name: rotateHalf;
+  animation: rotateHalf 0.5s linear;
+  transform-origin:center center;
+  transform: rotateZ(0deg)
+}
+
+@keyframes rotateHalf {
+  0%{transform: rotateZ(0deg);}
+  50%{transform: rotateZ(90deg);}
+  100%{transform: rotateZ(180deg);}
+}

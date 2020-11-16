@@ -1,7 +1,10 @@
 .projectDetail-content {
-  display: flex;
-  flex-direction: column;
-  padding: 2% 25% 10% 25%;
+ 
+}
+
+.productDetail-box {
+  max-width: 1100px !important;
+  padding-bottom: 30%;
 }
 .projectDetail-title {
   font-size: 24px;
@@ -19,8 +22,9 @@
   line-height: 30px;
 }
 .projectDetail-position {
-  display: flex;
-  margin-left: -5%;
+  /* display: flex; */
+  /* margin-left: -5%; */
+  margin: 30px 0;
 }
 
 .projectDetail-position label {
@@ -39,59 +43,96 @@
 .projectDetail-imgs {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 6%;
 }
-.projectDetail-imgs img {
+
+.projectDetail-item {
   width: 23%;
+  height: 280px;
   margin-right: 2%;
   margin-top: 2%;
+  overflow: hidden;
 }
-.projectDetail-modal {
-  display: flex;
+
+.item-img:hover {
+  transform: scale(1.1);
+  background: rgba(0, 0, 0, 0.53)!important;
+  z-index: 9;
+  
+}
+
+.projectDetail-item .item-img {
   width: 100%;
-  position: absolute;
   height: 100%;
-  top: 0;
-  left: -100%;
-  padding: 10% 0;
-  background: rgba(0, 0, 0, 0.3);
-  justify-content: center;
-  z-index: 9999;
-}
-.projectDetail-modal-content {
-  height: 60%;
-  background: #fff;
-  padding: 10px 10px 40px 10px;
-  position: relative;
-  width: 40%;
-  /* height: 100%; */
-}
-.swiper-wrapper{
-  margin-bottom: 200px!important;
-}
-.swiper-slide img {
-  width: 100%;
-  margin: 10px;
-}
-.swiper-pagination-fraction {
-  width: 10% !important;
-  position: absolute;
-  bottom: -100px;
-}
-.projectDetail-modal b {
-  position: absolute;
-  right: 26%;
-  top: 15%;
-  color: #fff;
+  transition: all 2s;
   cursor: pointer;
 }
-.swiper-container{
-  height: 110%;
+.projectDetail-imgs .item-img:nth-child(4n) {
+  margin-right: 0;
 }
-.swiper-button-next {
+
+
+/* model */
+.projectDetail-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 9999;
+}
+.projectDetail-modal .projectDetail-modal-content {
+  height: 50%;
+  background: #eeeeee;
+  padding: 10px 10px 40px 10px;
+  position: relative;
+  width: 52%;
+  /* height: 100%; */
+}
+
+.projectDetail-modal-content .model-close {
+  position: absolute;
+  top: -60px;
+  right: -15px;
+  background: url('../img/ICON/colse-icon.png') no-repeat;
+  background-size: 24px 24px;
+  height: 24px;
+  width: 24px;
+}
+
+.projectDetail-modal-content img {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.projectDetail-modal-content .arrow-button-next {
+  right: 0 !important;
+  height: 70px;
+  width: 45px;
   background-image: url("../img/Group 4.png") !important;
+  background-size: 45px 70px;
 }
-.swiper-button-prev {
-  left: 0!important;
+.projectDetail-modal-content .arrow-button-prev {
+  left: 0 !important;
+  height: 70px;
+  width: 45px;
   background-image: url("../img/Group 3.png") !important;
+  background-size: 45px 70px;
+
+}
+
+.model-box {
+  height: 96%;
+  padding-bottom: 30px;
+}
+
+.projectDetail-modal-content .detail-pagination {
+  text-align: left;
 }

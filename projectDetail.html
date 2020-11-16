@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width; initial-scale=1.0,maximum-scale=1.0,user-scalable=0"
-    />
-    <title></title>
-    <link rel="stylesheet" href="css/login.css" />
-    <link rel="stylesheet" href="css/projectDetail.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/swiper.min.css" />
-    <style>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <title></title>
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="css/projectDetail.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <style>
     .swiper-container {
-    width: 100%;
-    height: 100%;
-}  
+      width: 100%;
+      height: 100%;
+    }
+
     .swiper-slide {
       text-align: center;
       font-size: 18px;
@@ -36,185 +36,215 @@
       -webkit-align-items: center;
       align-items: center;
     }
-    </style>
-    <!-- <link rel="stylesheet/less" type="text/css" href="less.less" />
-    <script type="text/javascript">
-      less = {
-        env: "development",
-        async: false,
-        fileAsync: false,
-        poll: 1000,
-        functions: {},
-        dumpLineNumbers: "comments",
-        relativeUrls: false,
-        rootpath: ":/a.com/",
-      };
-    </script>
-    <script src="./dist/less.min.js"></script> -->
-  </head>
+  </style>
+</head>
 
-  <body>
-    <div class="login">
-      <header class="login-header">
-       
-        <div class="login-img"><img class="login-logo" onclick="handleGoto('ourRange')"  src="./img/Asset 1@4x-8 2@4x.png" /></div>
-        <div class="login-menus">
-          <span class="login-menu" onclick="handleGoto('ourRange')" >Our range</span>
-          <span class="login-menu" onclick="handleGoto('onlineStore')" >Online store</span>
-          <span class="login-menu" onclick="handleGoto('ourProjects')" >Projects</span>
-          <span class="login-menu" onclick="handleGoto('about')" >About</span>
-          <span class="login-menu" onclick="handleGoto('contact')" >Contact</span>
-          <span class="login-menu" onclick="handleGoto('blog')" >Blog</span>
-          <span class="login-menu" onclick="handleGoto('downloadBrochure')" >Download brochure</span>
-        </div>
-        <div class="login-icons">
-          <img src="./img/ICON/Group 13.png" class="login-icon" />
-          <img src="./img/ICON/Group 12.png" class="login-icon" />
-          <img src="./img/ICON/Group 11.png" class="login-icon" />
+<body>
+
+  <div class="project-detail">
+    <!-- header -->
+    <div class="main-header-box">
+      <header class="main-header">
+        <div class="container header-layout">
+          <div class="header-logo">
+            <img class="logo-icon" onclick="handleGoto('ourRange')" src="./img/site-icon.png" />
+          </div>
+          <nav class="header-menus">
+            <span class="menu-item" onclick="handleGoto('ourRange')">Our range</span>
+            <span class="menu-item" onclick="handleGoto('onlineStore')">Online store</span>
+            <span class="menu-item" onclick="handleGoto('ourProjects')">Projects</span>
+            <span class="menu-item" onclick="handleGoto('about')">About</span>
+            <span class="menu-item" onclick="handleGoto('contact')">Contact</span>
+            <span class="menu-item" onclick="handleGoto('blog')">Blog</span>
+            <span class="menu-item" onclick="handleGoto('downloadBrochure')">Download brochure</span>
+          </nav>
+          <span class="header-icons">
+            <img src="./img/ICON/shop-icon.png" class="item-icon" />
+            <img src="./img/ICON/my-icon.png" class="item-icon" onclick="handleGoto('myAccount')"/>
+            <img src="./img/ICON/search-icon.png" class="item-icon" />
+          </span>
         </div>
       </header>
-     
-      </div>
-      <div class="projectDetail-content">
+    </div>
+
+    <main class="projectDetail-content">
+      <div class="container productDetail-box">
         <div class="projectDetail-position wow fadeInDown animated">
-          <label>our projects  -</label>
+          <label>our projects -</label>
           <span>0687 Williamson Harbor</span>
         </div>
         <div class="projectDetail-title wow fadeInDown animated">
           143 Davis Expressway Apt. 606
         </div>
         <div class="projectDetail-dec wow fadeInDown animated">
-          Merit Stone specialises in offering a variety range of high-end premium quality stones. Our professional team pride ourselves in providing personalised design to meet our customer’s building and renovating needs. Our customer praises us for having the option to customised and crafted natural stones into different shapes and sizes accordingly to their liking. 
+          Merit Stone specialises in offering a variety range of high-end premium quality stones. Our professional team
+          pride ourselves in providing personalised design to meet our customer’s building and renovating needs. Our
+          customer praises us for having the option to customised and crafted natural stones into different shapes and sizes
+          accordingly to their liking.
         </div>
         <div class="projectDetail-imgs wow fadeInRight animated">
-          <img  src='./img/图片/Bitmap@4x_3.png' onclick="openModal()"/> 
-          <img  src='./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 2_3.png' onclick="openModal()"/> 
-          <img  src='./img/图片/Bitmap@4x 4.png' onclick="openModal()"/> 
-          <img  src='./img/图片/Bitmap@4x 6.png' onclick="openModal()"/> 
-          <img  src='./img/图片/Bitmap@4x 2_1.png' onclick="openModal()"/> 
-          <img  src='./img/图片/3d-rendering-luxury-hotel-reception-hall-and-offic-HGUS5JJ@4x.png' onclick="openModal()"/> 
-          <img  src='./img/图片/Bitmap@4x 3_1.png' onclick="openModal()"/> 
-          <img  src='./img/图片/Bitmap@4x_1.png' onclick="openModal()"/> 
+          <div class="projectDetail-item">
+            <img class="item-img" src='./img/pic/Bitmap@4x_3.png' onclick="openModal()" />
+          </div>
+          <div class="projectDetail-item">
+            <img class="item-img" src='./img/pic/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 2_3.png'onclick="openModal()" />
+          </div>
+          <div class="projectDetail-item">
+            <img class="item-img" src='./img/pic/Bitmap@4x 4.png' onclick="openModal()" />
+          </div>
+          <div class="projectDetail-item">
+            <img class="item-img" src='./img/pic/Bitmap@4x 6.png' onclick="openModal()" />
+          </div>
+          <div class="projectDetail-item">
+            <img class="item-img" src='./img/pic/Bitmap@4x 2_1.png' onclick="openModal()" />
+          </div>
+          <div class="projectDetail-item">
+            <img class="item-img" src='./img/pic/3d-rendering-luxury-hotel-reception-hall-and-offic-HGUS5JJ@4x.png' onclick="openModal()" />
+          </div>
+          <div class="projectDetail-item">
+            <img class="item-img" src='./img/pic/Bitmap@4x 3_1.png' onclick="openModal()" />
+          </div>
+          <div class="projectDetail-item">
+            <img class="item-img" src='./img/pic/Bitmap@4x_1.png' onclick="openModal()" />
+          </div>
+          <div class="projectDetail-item">
+            <img class="item-img" src='./img/pic/Bitmap@4x 5.png' onclick="openModal()" />
+          </div>
 
+          <div class="projectDetail-item">
+            <img class="item-img" src='./img/pic/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 2_3.png'onclick="openModal()" />
+          </div>
 
-          <img  src='./img/图片/Bitmap@4x 5.png' onclick="openModal()"/> 
-          <img  src='./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 2_3.png' onclick="openModal()"/> 
-          <img  src='./img/图片/Bitmap@4x_4.png' onclick="openModal()"/> 
-          <img  src='./img/图片/Bitmap@4x 2_2.png' onclick="openModal()"/> 
+          <div class="projectDetail-item">
+            <img class="item-img" src='./img/pic/Bitmap@4x_4.png' onclick="openModal()" />
+          </div>
 
+          <div class="projectDetail-item">
+            <img class="item-img" src='./img/pic/Bitmap@4x 2_2.png' onclick="openModal()" />
+          </div>
 
-          <img  src='./img/图片/Bitmap@4x 5.png' onclick="openModal()"/> 
-          <img  src='./img/图片/Bitmap@4x_3.png' onclick="openModal()"/> 
-          <img  src='./img/图片/Bitmap@4x 2_1.png' onclick="openModal()"/> 
-          <img  src='./img/图片/Bitmap@4x 3_1.png' onclick="openModal()"/> 
-          <!-- <img  src='./img/图片/Bitmap4@4x 3.png' onclick="openModal()"/> 
-          <img  src='./img/图片/3d-rendering-luxury-hotel-reception-hall-and-offic-HGUS5JJ@4x.png' onclick="openModal()"/> 
-          <img  src='./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N@4x 2_4.png' onclick="openModal()"/> 
-          <img  src='./img/图片/modern-sink-and-round-mirror-with-led-light-in-a-l-86CN53N1@4x.png' onclick="openModal()"/>  -->
+          <div class="projectDetail-item">
+            <img class="item-img" src='./img/pic/Bitmap@4x 5.png' onclick="openModal()" />
+          </div>
+          
+          <div class="projectDetail-item">
+            <img class="item-img" src='./img/pic/Bitmap@4x_3.png' onclick="openModal()" />
+          </div>
+
+          <div class="projectDetail-item">
+            <img class="item-img" src='./img/pic/Bitmap@4x 2_1.png' onclick="openModal()" />
+          </div>
+
+          <div class="projectDetail-item">
+            <img class="item-img" src='./img/pic/Bitmap@4x 3_1.png' onclick="openModal()" />
+          </div>
+          
+    
+    
         </div>
       </div>
-  
-    <div class="projectDetail-modal">
-      <b onclick="closeModal()">X </b>
-      <div class="projectDetail-modal-content">
-        <div class="swiper-container">
+    </main>
+
+
+    <!-- footer -->
+    <footer class="main-footer">
+      <img class="footer-icon" src="./img/footer-icon.png" />
+      <p class="login-bottom-dec wow fadeInDown animated">
+        Copyright Merit Stone 2020. All Rights Reserved.
+      </p>
+    </footer>
+  </div>
+
+  <!-- model -->
+  <div class="projectDetail-modal">
+    <div class="projectDetail-modal-content">
+      <b class="model-close" onclick="closeModal()"></b>
+      <div class="swiper-container model-box">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src='img/图片/Bitmap@4x_3.png'/>
-            </div>
-            <div class="swiper-slide">
-              <img src='img/图片/Bitmap@4x_4.png'/></div>
-            <div class="swiper-slide">
-              <img src='img/图片/Bitmap@4x_3.png'/></div>
+          <div class="swiper-slide detail-item">
+            <img src='img/pic/Bitmap@4x_3.png' />
+          </div>
+          <div class="swiper-slide">
+            <img src='img/pic/Bitmap@4x_4.png' /></div>
+          <div class="swiper-slide">
+            <img src='img/pic/Bitmap@4x_3.png' /></div>
         </div>
-        <div class="swiper-pagination"></div>
-        
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        
-        <div class="swiper-scrollbar"></div>
-        </div>
-  </div>
-    </div>
-  </div>
-  
-  </div>
-      <div class="login-bottom">
-        <img class="login-logo2" src="./img/Asset 1@4x-8 3@4x.png" />
-        <span class="login-bottom-dec wow fadeInDown animated">
-          Copyright Merit Stone 2020. All Rights Reserved.
-        </span>
+
+        <div class="swiper-button-prev arrow-button-prev"></div>
+        <div class="swiper-button-next arrow-button-next"></div>
+        <div class="swiper-pagination detail-pagination"></div>
+
       </div>
+
     </div>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/style.js"></script>
+  </div>
 
-     <script type="text/javascript">
-      function handleGoto(path) {
-        window.location.href = `./${path}.html`;
-      }
-    </script>
-  </body>
 
-  <script src="./js/swiper.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>        
+  
 
-window.onscroll = function () {
-       let a = document.documentElement.scrollTop || document.body.scrollTop;//滚动条y轴上的距离
-       let b = document.documentElement.clientHeight || document.body.clientHeight;//可视区域的高度
-       let c = document.documentElement.scrollHeight || document.body.scrollHeight;//可视化的高度与溢出的距离（总高度）
-       if(a> 108){
-      document.getElementsByClassName('login-header')[0].style.bottomBorder = '1px solid #cdcdcd'
-      document.getElementsByClassName('login-header')[0].style.boxShadow = '0 0 4px  #808080'
-      
-       }else{
-        document.getElementsByClassName('login-header')[0].style.border = 'none'
-      document.getElementsByClassName('login-header')[0].style.boxShadow = 'none'
-       }
+  
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+  <script type="text/javascript" src="js/style.js"></script>
+
+  <script type="text/javascript">
+    function handleGoto(path) {
+      window.location.href = `./${path}.html`;
     }
-    var mySwiper = new Swiper ('.swiper-container', {
-      direction: 'horizontal',
-      loop: false,
-      
-      // 如果需要分页器
-      pagination: '.swiper-pagination',
-      
-      // pagination: {
-      //   el: '.swiper-pagination',
-      //   type: 'fraction',
-      // },
-      // 如果需要前进后退按钮
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-      paginationType: 'fraction',
-      // 如果需要滚动条
-      scrollbar: '.swiper-scrollbar',
-      // pagination: {
-      //   el: '.swiper-pagination',
-      //   type: 'fraction',
-      // },
-      // navigation: {
-      //   nextEl: '.swiper-button-next',
-      //   prevEl: '.swiper-button-prev',
-      // },
-    })        
+  </script>
+</body>
 
-    function closeModal(){
+<script src="./js/swiper.min.js"></script>
 
-      document.getElementsByClassName("projectDetail-modal")[0].style.display =
-          "none";
-    }
-    function openModal(){
+<!-- Initialize Swiper -->
+<script>
+  // window.onscroll = function () {
+  //   let a = document.documentElement.scrollTop || document.body.scrollTop; //滚动条y轴上的距离
+  //   let b = document.documentElement.clientHeight || document.body.clientHeight; //可视区域的高度
+  //   let c = document.documentElement.scrollHeight || document.body.scrollHeight; //可视化的高度与溢出的距离（总高度）
+  //   if (a > 108) {
+  //     document.getElementsByClassName('login-header')[0].style.bottomBorder = '1px solid #cdcdcd'
+  //     document.getElementsByClassName('login-header')[0].style.boxShadow = '0 0 4px  #808080'
 
-      document.getElementsByClassName("projectDetail-modal")[0].style.left =
-          "0";
-      document.getElementsByClassName("projectDetail-modal")[0].style.display =
-          "flex";
+  //   } else {
+  //     document.getElementsByClassName('login-header')[0].style.border = 'none'
+  //     document.getElementsByClassName('login-header')[0].style.boxShadow = 'none'
+  //   }
+  // }
+  var mySwiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    loop: false,
 
-    }
-    </script>
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+
+    // pagination: {
+    //   el: '.swiper-pagination',
+    //   type: 'fraction',
+    // },
+    // 如果需要前进后退按钮
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    paginationType: 'fraction',
+    
+  })
+
+  function closeModal() {
+
+    document.getElementsByClassName("projectDetail-modal")[0].style.display =
+      "none";
+  }
+
+  function openModal() {
+
+    document.getElementsByClassName("projectDetail-modal")[0].style.left =
+      "0";
+    document.getElementsByClassName("projectDetail-modal")[0].style.display =
+      "flex";
+
+  }
+</script>
+
 </html>

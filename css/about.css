@@ -4,7 +4,7 @@
 .about-header {
   width: 100%;
   height: 100vh;
-  background: url("../img/图片/Video3@4x (1).jpg") no-repeat;
+  background: url("../img/pic/Video3@4x (1).jpg") no-repeat;
   background-size: cover;
   filter: grayscale(0.5);
 }
@@ -39,14 +39,15 @@ header {
 }
 .about-word span {
   font-size: 16px;
-  font-family: Jost-Regular_Light, Jost;
+  font-family: 'Jost Light',sans-serif;
   font-weight: normal;
   color: #ffffff;
   line-height: 30px;
 }
 .about-word label {
   font-size: 48px;
-  font-family: FuturaBT-Book, FuturaBT;
+  font-family: 'Futura Book',sans-serif;
+
   font-weight: normal;
   color: #ffffff;
   line-height: 57px;
@@ -101,7 +102,8 @@ header {
   font-weight: 400;
   color: #fff;
   cursor: pointer;
-  font-family: Jost-Regular, Jost;
+  font-family: 'Jost Light',sans-serif;
+
 }
 .about-icon {
   width: 26px;
@@ -133,15 +135,14 @@ header {
 .about-slogan span {
   font-size: 16px;
   color: #ffffff;
-  font-family: Jost-Regular, Jost;
+  font-family: 'Jost Light',sans-serif;
   font-weight: 300;
 }
 
 .about-slogan span {
   font-size: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Jost Light',sans-serif;
+
 }
 .about-slogan span .thin {
   font-weight: 100;
@@ -155,7 +156,7 @@ header {
 .about-scroll {
   font-size: 16px;
 
-  font-family: Jost-Regular, Jost;
+  font-family: 'Jost Light',sans-serif;
 
   font-weight: 400;
   display: flex;
@@ -172,9 +173,9 @@ header {
 .about-content1 {
   display: flex;
   flex-direction: column;
-  background: #eeeeee;
+  background: #f8f8f8;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   /* justify-content: center; */
   align-items: center;
   padding: 92px 0;
@@ -201,12 +202,16 @@ header {
   flex-wrap: wrap;
   padding: 5% 15.5%;
   width: 100%;
-  background: #fff;
+  background: #f8f8f8;
 }
 .about-centerDec {
-  width: calc(65%);
+  width: calc(69%);
   color: #333333;
   font-weight: 300;
+  font-family: 'Jost Light',sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  color: #333333;
 }
 .about-intro-container-smallimg {
   width: 54px;
@@ -277,10 +282,6 @@ header {
 .about-intro-container-img {
   width: 100%;
   height: 330px;
-  /* background-size: 100% 100%;
-  background-position: center;
-
-  background: url("../img/图片/3d-rendering-luxury-hotel-reception-hall-and-offic-HGUS5JJ@4x.png"); */
 }
 .about-intro-container2 label {
   display: flex;
@@ -294,6 +295,8 @@ header {
   margin-top: 0 !important;
   align-items: center;
   margin-left: 31px;
+  font-size: 15px;
+  font-family: 'Jost Light',sans-serif;
 }
 .about-intro-container label {
   display: flex;
@@ -310,7 +313,8 @@ header {
 .about-content1 label {
   height: 29px;
   font-size: 24px;
-  font-family: FuturaBT-Medium, FuturaBT;
+  font-family: 'Futura Medium',sans-serif;
+
   font-weight: 500;
   color: #333333;
   line-height: 29px;
@@ -320,7 +324,7 @@ header {
   width: 448px;
   height: 192px;
   font-size: 15px;
-  font-family: Jost-Regular_Light, Jost;
+  font-family: 'Jost Light',sans-serif;
   font-weight: normal;
   color: #333333;
   line-height: 24px;
@@ -328,11 +332,11 @@ header {
 }
 .about-content-photo {
   width: 100%;
-  height: 500px;
+  height: 250px;
 }
 .about-content-photo img {
   width: 100%;
-  height: 500px;
+  height: 250px;
 }
 
 input:focus {

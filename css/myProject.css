@@ -4,7 +4,7 @@
 .myProject-header {
   width: 100%;
   height: 100vh;
-  background: url("../img/图片/Video1@4x.jpg") no-repeat;
+  background: url("../img/pic/Video1@4x.jpg") no-repeat;
   background-size: cover;
   filter: grayscale(0.5);
 }
@@ -39,14 +39,15 @@ header {
 }
 .myProject-word span {
   font-size: 16px;
-  font-family: Jost-Regular_Light, Jost;
+  font-family: 'Jost Light',sans-serif;
   font-weight: normal;
   color: #ffffff;
   line-height: 23px;
 }
 .myProject-word label {
   font-size: 48px;
-  font-family: FuturaBT-Book, FuturaBT;
+  font-family: 'Futura Book', 'Futura Medium', sans-serif;
+  
   font-weight: normal;
   color: #ffffff;
   line-height: 57px;
@@ -99,7 +100,8 @@ header {
   font-weight: 400;
   color: #fff;
   cursor: pointer;
-  font-family: Jost-Regular, Jost;
+  font-family: 'Jost Light',sans-serif;
+
 }
 .myProject-icon {
   width: 26px;
@@ -131,7 +133,7 @@ header {
 .myProject-slogan span {
   font-size: 16px;
   color: #ffffff;
-  font-family: Jost-Regular, Jost;
+  font-family: 'Jost Light',sans-serif;
 }
 
 .myProject-slogan span {
@@ -151,9 +153,7 @@ header {
 }
 .myProject-scroll {
   font-size: 16px;
-
-  font-family: Jost-Regular, Jost;
-
+  font-family: 'Jost Light',sans-serif;
   font-weight: 400;
   display: flex;
   flex-direction: column;
@@ -172,24 +172,15 @@ header {
   background: #eeeeee;
   width: 100%;
   height: 100vh;
-  /* justify-content: center; */
   align-items: center;
   padding: 92px 0;
 }
-.myProject-content1 div {
-  /* width: 495px;
-    height: 355px; */
-  /* padding: 34px 58px;
-  display: flex;
-  flex-direction: column; */
-}
+
 .myProject-intro {
   display: flex;
   flex-direction: row;
   margin-top: 47px;
   flex-wrap: wrap;
-  width: 80%;
-  padding-left: 10%;
   justify-content: center;
 }
 .myProject-intro2 {
@@ -210,14 +201,15 @@ header {
 .myProject-intro-container {
   display: flex;
   flex-direction: column;
-  width: 32%;
   position: relative;
+  margin-right: 10px;
 }
 .myProject-intro-container b {
   position: absolute;
-  top: 200px;
+  top: 352px;
   font-size: 38px;
-  font-family: FuturaBT-Medium, FuturaBT;
+  font-family: 'Futura Medium',sans-serif;
+  
   font-weight: 500;
   color: #bf9757;
   line-height: 23px;
@@ -246,12 +238,13 @@ header {
 }
 
 .myProject-intro-container-div {
-  width: 100%;
+  width: 400px;
+  height: 395px;
   overflow: hidden;
 }
 .myProject-intro-container-img {
   width: 100%;
-  /* background-size: 100%; */
+  height: 100%;
   background-size: 100% 100%;
   cursor: pointer;
   transition: all 2s;
@@ -277,7 +270,7 @@ header {
 }
 .myProject-intro-container label {
   font-size: 15px;
-  font-family: FuturaBT-Medium, FuturaBT;
+  font-family: 'Futura Medium',sans-serif;
   font-weight: 500;
   color: #333333;
   line-height: 23px;
@@ -286,7 +279,7 @@ header {
 }
 .myProject-intro-container span {
   font-size: 15px;
-  font-family: Jost-Regular_Light, Jost;
+  font-family: 'Jost Light',sans-serif;
   font-weight: normal;
   color: #333333;
   line-height: 24px;
@@ -295,7 +288,7 @@ header {
 .myProject-content1 label {
   height: 29px;
   font-size: 24px;
-  font-family: FuturaBT-Medium, FuturaBT;
+  font-family: 'Futura Medium',sans-serif;
   font-weight: 500;
   color: #333333;
   line-height: 29px;
@@ -304,7 +297,7 @@ header {
   width: 448px;
   height: 192px;
   font-size: 15px;
-  font-family: Jost-Regular_Light, Jost;
+  font-family: 'Jost Light',sans-serif;
   font-weight: normal;
   color: #797979;
   line-height: 24px;

@@ -1,17 +1,23 @@
 .delivery-page * {
   box-sizing: border-box;
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 
-.body {
+.delivery-container {
   display: flex;
   height: calc(100vh - 103px);
+}
+
+.payment-container {
+  display: flex;
+  height: calc(100vh - 60px);
 }
 
 .body-left-wrapper {
   width: 55.83%;
   height: 100%;
   background-color: #f8f8f8;
+  font-size: 14px;
 }
 
 .body-left {
@@ -30,6 +36,69 @@
 
 .crumbs {
   margin-top: 55px;
+  font-family: 'Jost Light';
+
+}
+
+
+.delivery-form .input-item, .card-info, .bank-info .input-item{
+  height: 46px;
+  border: 1px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  background: #fff;
+  color: #525358;
+  padding: 14px;
+}
+
+.input-item .item-title {
+  margin-right: 20px;
+}
+.input-item input, .card-info input {
+  border: 0;
+  flex: 1;
+  height: 40px;
+  font-family: 'Futura Book';
+}
+
+
+.payment-title {
+  margin: 0 15px;
+}
+.payment-way {
+  width: 114px;
+}
+
+.card-info .card-date {
+  flex: 0;
+  width: 80px;
+}
+
+.card-info .card-cvc{
+  flex: 0;
+  width: 60px;
+}
+
+.roy-pay, .bank-trans {
+  font-family: 'Futura Book';
+  color: #333333;
+  margin: 20px 0;
+}
+
+.roypay-item {
+ margin-right: 20px;
+}
+
+.roypay-item .payment-way {
+  height: 16px;
+  width: 56px;
+  margin-bottom: -4px;
+}
+
+.bank-info .bank-number {
+  display: flex;
+  justify-content: space-between;
 }
 
 input[type="checkbox"] {
@@ -40,6 +109,8 @@ input[type="checkbox"] {
   height: 13px;
   position: relative;
   margin-right: 12px;
+  font-family: 'Jost Light';
+
 }
 input[type="checkbox"]:checked:after {
   content: "✓";
@@ -75,16 +146,36 @@ input[type="checkbox"]:after {
   color: #000000;
   font-size: 22px;
   margin-top: 35px;
+  font-family: 'Futura Book';
 }
 
 .tip {
   color: #525358;
   margin-top: 13px;
+  font-family: 'Futura Book';
 }
 
 .sign-in,
 .register {
   color: #bf9757;
+}
+
+
+
+.deliver-title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Futura Book';
+  border-bottom: 1px solid #CDCDCD;
+  margin-bottom: 20px;
+}
+
+.deliver-title-box .title-edit {
+  text-decoration: underline;
+  color: #525358;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .deliver-title {
@@ -93,6 +184,7 @@ input[type="checkbox"]:after {
   color: #000;
   font-size: 16px;
   border-bottom: 1px solid #eeeeee;
+  font-family: 'Futura Book';
 }
 
 .form-item-wrapper {
@@ -102,6 +194,8 @@ input[type="checkbox"]:after {
 
 .form-item-wrapper-1 {
   margin-top: 26px;
+  font-family: 'Futura Book';
+
 }
 
 .address {
@@ -134,6 +228,8 @@ input[type="checkbox"]:after {
   margin-top: 22px;
   height: 18px;
   line-height: 18px;
+  font-family: 'Futura Book';
+  color: #525358;
 }
 
 .form-item-wrapper-4 input {
@@ -145,6 +241,7 @@ input[type="checkbox"]:after {
 
 .form-item-wrapper-4 p {
   margin-left: 12px;
+
 }
 
 .submit-btn {
@@ -199,6 +296,7 @@ input[type="checkbox"]:after {
 
 .goods-title {
   color: #bf9757;
+  font-family: 'Futura Book';
 }
 
 .goods-name {
@@ -206,16 +304,19 @@ input[type="checkbox"]:after {
   line-height: 22px;
   margin-top: 4px;
   font-weight: bold;
+  font-family: 'Futura Medium';
 }
 
 .goods-price {
   font-size: 15px;
   margin-top: 12px;
+  font-family: 'Futura Book';
 }
 
 .price-wrapper {
   padding: 18px 0;
   border-top: 1px solid #cdcdcd;
+  font-family: 'Futura Book';
 }
 
 .price-wrapper-1,

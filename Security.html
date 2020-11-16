@@ -1,407 +1,117 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width; initial-scale=1.0,maximum-scale=1.0,user-scalable=0"
-    />
-    <title></title>
 
-    <link rel="stylesheet" href="css/myOrders.css" />
-    <link rel="stylesheet" href="css/login.css" />
-    <link rel="stylesheet" href="css/projectDetail.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/swiper.min.css" />
-    <style>
-      .swiper-container {
-        width: 100%;
-        height: 100%;
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <title></title>
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/security.css" />
+  <link rel="stylesheet" href="css/myOrders.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="css/projectDetail.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+</head>
 
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
+<body>
 
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
-      .security-bar {
-        width: auto;
-        height: 80px;
-        margin-top: 20px;
-        border-radius: 5px;
-        font-size: 12px;
-        width: 660px;
-        height: 327px;
-        background: #f7f6f4;
-        border: 1px solid #e3e3e3;
-      }
-      .hrStyle {
-        background-color: #BFBFBF;
-        width: 660px;
-        margin-top: 40px;
-        size: 5px;
-        height: 1px;
-      }
-      .hrStyle2 {
-        background-color: rgb(230, 227, 230);
-        width: auto;
-        margin-top: 20px;
-        size: 5px;
-      }
-      .checkbox {
-        width: 30px;
-        zoom: 120%;
-      }
-      .userName {
-        margin-right: 10px;
-        color: black;
-      }
-      .otherInfo {
-        margin-right: 10px;
-        color: rgb(153, 151, 152);
-      }
-      .editBtn {
-        cursor: pointer;
-        float: right;
-        margin-top: -39px;
-      }
-      .bottomInfo {
-        color: rgb(153, 151, 152);
-        display: flex;
-        justify-content: start;
-        margin: 18px;
-        margin-left: 66px;
-      }
-      .security-bar2 {
-        width: auto;
-        height: 80px;
-        background-color: rgb(247, 245, 246);
-        margin-top: 20px;
-        border-radius: 5px;
-        padding: 15px;
-        margin-bottom: 40px;
-        font-size: 12px;
-      }
-      .inputDiv {
-        margin: 10px 0;
-      }
-      .firstStyle {
-        width: 50%;
-        height: 30px;
-        padding: 1px;
-        margin-right: 3%;
-        border-radius: 3px;
-        border: 1px solid rgb(218, 216, 217);
-        margin-top: 12px;
-      }
-      .lastStyle {
-        width: 45.6%;
-        height: 30px;
-        padding: 1px;
-        border-radius: 3px;
-        border: 1px solid rgb(218, 216, 217);
-        margin-top: 12px;
-      }
-      .security-bar-content {
-        display: flex;
-        flex-direction: column;
-        margin: 18px;
-        margin: 32px 50px 32px 24px;
-        font-size: 12px;
-      }
-
-      .security-bar-content label {
-        width: 587px;
-        height: 39px;
-        font-size: 16px;
-        font-family: FuturaBT-Book, FuturaBT;
-        font-weight: normal;
-        color: #333333;
-        display: flex;
-        align-items: center;
-      }
-
-      .security-bar-content input {
-        width: 587px;
-        height: 39px;
-        background: #ffffff;
-        border-radius: 3px;
-        border: 1px solid #bfbfbf;
-        text-indent: 20px;
-        margin: 4px 0;
-      }
-
-      .security-bar-content div {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 34px;
-
-      }
-      .security-bar-content button {
-        width: 220px;
-        height: 39px;
-        background: #d8d1c7;
-        font-size: 14px;
-        font-family: FuturaBT-Book, FuturaBT;
-        font-weight: normal;
-        color: #525358;
-        border: none;
-      }
-      .securityStyle {
-        width: 99.7%;
-        height: 30px;
-        border-radius: 3px;
-        margin-top: 12px;
-        border: 1px solid rgb(218, 216, 217);
-      }
-      .othersecurity {
-        display: flex;
-        margin-top: 10px;
-      }
-      .state {
-        width: 33%;
-        margin-right: 1%;
-        padding: 1px;
-        height: 30px;
-        border-radius: 3px;
-        border: 1px solid rgb(218, 216, 217);
-      }
-      .suburb {
-        width: 32%;
-        margin-right: 1%;
-        padding: 1px;
-        height: 30px;
-        border-radius: 3px;
-        border: 1px solid rgb(218, 216, 217);
-      }
-      .postCode {
-        width: 30.7%;
-        height: 30px;
-        padding: 1px;
-        border-radius: 3px;
-        border: 1px solid rgb(218, 216, 217);
-      }
-      .add-security-content {
-        width: auto;
-        height: 370px;
-        margin-top: 20px;
-        background-color: rgb(247, 245, 246);
-        padding: 25px;
-        font-size: 12px;
-      }
-      .lastBox {
-        margin: 10px 0;
-        display: flex;
-        justify-content: space-between;
-      }
-      .phoneBox {
-        width: 48%;
-        margin-right: 1%;
-        padding: 1px;
-        height: 30px;
-      }
-      .numberInput {
-        width: 100%;
-        margin-right: 1%;
-        padding: 1px;
-        height: 30px;
-        border-radius: 3px;
-        border: 1px solid rgb(218, 216, 217);
-      }
-      .emailBox {
-        width: 46%;
-        padding: 1px;
-        height: 30px;
-      }
-      .emailInput {
-        width: 99%;
-        margin-right: 1%;
-        padding: 1px;
-        height: 30px;
-        border-radius: 3px;
-        border: 1px solid rgb(218, 216, 217);
-      }
-      .securityBtn {
-        width: 20%;
-        height: 30px;
-        background-color: rgb(213, 209, 204);
-        border: none;
-        position: relative;
-        bottom: -40px;
-        right: -79.6%;
-      }
-    </style>
-    <!-- <link rel="stylesheet/less" type="text/css" href="less.less" />
-    <script type="text/javascript">
-      less = {
-        env: "development",
-        async: false,
-        fileAsync: false,
-        poll: 1000,
-        functions: {},
-        dumpLineNumbers: "comments",
-        relativeUrls: false,
-        rootpath: ":/a.com/",
-      };
-    </script>
-    <script src="./dist/less.min.js"></script> -->
-  </head>
-
-  <body>
-    <div class="login">
-      <header class="login-header">
-       
-        <div class="login-img">
-          <img
-            class="login-logo"
-            onclick="handleGoto('ourRange')"
-            src="./img/Asset 1@4x-8 2@4x.png"
-          />
-        </div>
-        <div class="login-menus">
-          <span class="login-menu" onclick="handleGoto('ourRange')"
-            >Our range</span
-          >
-          <span class="login-menu" onclick="handleGoto('onlineStore')"
-            >Online store</span
-          >
-          <span class="login-menu" onclick="handleGoto('ourProjects')"
-            >Projects</span
-          >
-          <span class="login-menu" onclick="handleGoto('about')">About</span>
-          <span class="login-menu" onclick="handleGoto('contact')"
-            >Contact</span
-          >
-          <span class="login-menu" onclick="handleGoto('blog')">Blog</span>
-          <span class="login-menu" onclick="handleGoto('downloadBrochure')"
-            >Download brochure</span
-          >
-        </div>
-        <div class="login-icons">
-          <img src="./img/ICON/Group 13.png" class="login-icon" />
-          <img src="./img/ICON/Group 12.png" class="login-icon" />
-          <img src="./img/ICON/Group 11.png" class="login-icon" />
+  <div class="security-box">
+    <!-- header -->
+    <div class="main-header-box">
+      <header class="main-header">
+        <div class="container header-layout">
+          <div class="header-logo">
+            <img class="logo-icon" onclick="handleGoto('ourRange')" src="./img/site-icon.png" />
+          </div>
+          <nav class="header-menus">
+            <span class="menu-item" onclick="handleGoto('ourRange')">Our range</span>
+            <span class="menu-item" onclick="handleGoto('onlineStore')">Online store</span>
+            <span class="menu-item" onclick="handleGoto('ourProjects')">Projects</span>
+            <span class="menu-item" onclick="handleGoto('about')">About</span>
+            <span class="menu-item" onclick="handleGoto('contact')">Contact</span>
+            <span class="menu-item" onclick="handleGoto('blog')">Blog</span>
+            <span class="menu-item" onclick="handleGoto('downloadBrochure')">Download brochure</span>
+          </nav>
+          <span class="header-icons">
+            <img src="./img/ICON/shop-icon.png" class="item-icon" />
+            <img src="./img/ICON/my-icon.png" class="item-icon" onclick="handleGoto('myAccount')"/>
+            <img src="./img/ICON/search-icon.png" class="item-icon" />
+          </span>
         </div>
       </header>
     </div>
 
-    <div class="myOrders-content">
-      <div class="myOrders-content-left">
-        <label>Dashboard</label>
-        <span> My account </span>
-        <span> My orders </span>
-        <span> Unpaid </span>
-        <span> Order placed </span>
-        <span> Processing </span>
 
-        <span> Completed </span>
-
-        <span> security book </span>
-
-        <span class="myOrders-content-selectd"> Security </span>
-      </div>
-      <div class="myOrders-content-right">
-        <label> Security</label>
-        <div class="hrStyle" ></div>
-        <div class="security-bar">
-          <div class="security-bar-content">
-            <label>Password*</label>
-            <input type="password" placeholder="Enter your password" />
-            <label>Confirm password*</label>
-            <input type="password" placeholder="Enter your password" />
-          <div> <button>Save changes</button></div> 
+    <main class="myorders-container">
+      <div class="container">
+        <div class="myOrders-content">
+          <div class="myOrders-content-left">
+            <label>Dashboard</label>
+            <span onclick="handleGoto('MyAccount')">
+              My account
+            </span>
+            <span onclick="handleGoto('MyOrders')">
+              My orders
+            </span>
+            <span onclick="handleGoto('myOrdersUnpaid')">
+              Unpaid
+            </span>
+            <span onclick="handleGoto('myOrdersPlaced')">
+              Order placed
+            </span>
+            <span onclick="handleGoto('myOrdersProcessing')">
+              Processing
+            </span>
+            <span onclick="handleGoto('myOrdersCompleted')">
+              Completed
+            </span>
+            <span onclick="handleGoto('AddressBook')">
+              Address book
+            </span>
+            <span onclick="handleGoto('Security')" class="myOrders-content-selected">
+              Security
+            </span>
+          </div>
+          <div class="myOrders-content-right">
+            <label> Security</label>
+            <div class="hrStyle"></div>
+            <div class="security-bar">
+              <div class="security-bar-content">
+                <label>Password*</label>
+                <input type="password" placeholder="Enter your password" />
+                <label>Confirm password*</label>
+                <input type="password" placeholder="Enter your password" />
+                <div> <button>Save changes</button></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="login-bottom">
-      <img class="login-logo2" src="./img/Asset 1@4x-8 3@4x.png" />
-      <span class="login-bottom-dec wow fadeInDown animated">
+    </main>
+
+
+    <footer class="main-footer">
+      <img class="footer-icon" src="./img/footer-icon.png" />
+      <p class="login-bottom-dec wow fadeInDown animated">
         Copyright Merit Stone 2020. All Rights Reserved.
-      </span>
-    </div>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/style.js"></script>
+      </p>
+    </footer>
+  </div>
 
-    <script type="text/javascript">
-      function handleGoto(path) {
-        window.location.href = `./${path}.html`;
-      }
-    </script>
-  </body>
 
-  <script src="./js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+  <script type="text/javascript" src="js/style.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-
-window.onscroll = function () {
-       let a = document.documentElement.scrollTop || document.body.scrollTop;//滚动条y轴上的距离
-       let b = document.documentElement.clientHeight || document.body.clientHeight;//可视区域的高度
-       let c = document.documentElement.scrollHeight || document.body.scrollHeight;//可视化的高度与溢出的距离（总高度）
-       if(a> 108){
-      document.getElementsByClassName('login-header')[0].style.bottomBorder = '1px solid #cdcdcd'
-      document.getElementsByClassName('login-header')[0].style.boxShadow = '0 0 4px  #808080'
-      
-       }else{
-        document.getElementsByClassName('login-header')[0].style.border = 'none'
-      document.getElementsByClassName('login-header')[0].style.boxShadow = 'none'
-       }
-    }
-    var mySwiper = new Swiper(".swiper-container", {
-      direction: "horizontal",
-      loop: false,
-
-      // 如果需要分页器
-      pagination: ".swiper-pagination",
-
-      // pagination: {
-      //   el: '.swiper-pagination',
-      //   type: 'fraction',
-      // },
-      // 如果需要前进后退按钮
-      nextButton: ".swiper-button-next",
-      prevButton: ".swiper-button-prev",
-      paginationType: "fraction",
-      // 如果需要滚动条
-      scrollbar: ".swiper-scrollbar",
-      // pagination: {
-      //   el: '.swiper-pagination',
-      //   type: 'fraction',
-      // },
-      // navigation: {
-      //   nextEl: '.swiper-button-next',
-      //   prevEl: '.swiper-button-prev',
-      // },
-    });
-
-    function closeModal() {
-      document.getElementsByClassName("projectDetail-modal")[0].style.display =
-        "none";
-    }
-    function openModal() {
-      document.getElementsByClassName("projectDetail-modal")[0].style.left =
-        "0";
-      document.getElementsByClassName("projectDetail-modal")[0].style.display =
-        "flex";
+  <script type="text/javascript">
+    function handleGoto(path) {
+      window.location.href = `./${path}.html`;
     }
   </script>
+</body>
+
+
 </html>
