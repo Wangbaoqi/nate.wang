@@ -35,6 +35,7 @@ body {
   align-items: center;
   height: 88px;
   padding-left: 25px;
+  font-size: 12px;
 }
 
 .header-top .header-phone-top-left, .header-phone-top-right {
@@ -68,10 +69,6 @@ body {
   background: url('./assets/img/user-icon.png') no-repeat;
   background-size: 100% 100%;
   margin-right: 10px;
-}
-
-.header-user .user-text {
-  font-family: NanumPen;
 }
 
 .header-logo .logo-box {
@@ -120,6 +117,7 @@ body {
 
 .header-bottom-left .header-dropdown {
   margin-right: 34px;
+  color: #999999;
 }
 
 .header-dropdown .down-icon {
@@ -203,6 +201,7 @@ body {
   height: 60px;
   padding: 0 20px;
   border-bottom: 2px solid #F7F7F7;
+  color: #666666;
 }
 
 .recent-header .recent-icon {
@@ -259,6 +258,7 @@ body {
   height: 60px;
   line-height: 60px;
   text-align: center;
+  font-size: 10px;
   color: #d8d8d8;
   cursor: pointer;
 }
@@ -335,6 +335,7 @@ body {
   justify-content: space-between;
   align-items: center;
   border-top: 2px solid rgba(255, 255, 255, .3);
+  font-size: 13px;
 }
 
 .news-info-bar .news-views, .news-info-bar .news-comment {
@@ -397,6 +398,9 @@ body {
 }
 
 .news-item .news-item-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 60px;
   height: 20px;
   color: #FFFFFF;
@@ -804,6 +808,7 @@ body {
     padding: 0 24px !important;
   }
   .header-bottom {
+    font-size: 12px;
     height: 40px !important;
     padding-left: 0 !important;
   }
