@@ -16,8 +16,9 @@ body {
 }
 
 .life-header .header-top {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 88px;
   padding: 0 42px;
@@ -28,9 +29,12 @@ body {
 }
 
 .life-header .header-bottom {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 88px;
+  padding-left: 25px;
 }
 
 .header-top .header-phone-top-left, .header-phone-top-right {
@@ -46,41 +50,28 @@ body {
 }
 
 .header-top .header-top-center {
+
 }
 
 .header-top .header-top-right {
-
+  position: absolute;
+  top: 50%;
+  right: 46px;
+  transform: translateY(-50%);
 }
 
-.header-top-left .header-dropdown {
-  margin-right: 34px;
-}
-
-.header-dropdown .down-icon {
-  display: inline;
-  width: 26px;
-  height: 26px;
-  background: url('./assets/img/icon.png') no-repeat;
-  background-size: 100% 100%;
-  margin-left: 10px;
-}
-
-.header-weather .weather-icon {
-  display: inline;
-  width: 26px;
-  height: 26px;
-  background: url('./assets/img/icon.png') no-repeat;
-  background-size: 100% 100%;
-  margin-right: 10px;
-}
 
 .header-user .user-icon {
   display: inline;
-  width: 26px;
-  height: 26px;
-  background: url('./assets/img/icon.png') no-repeat;
+  width: 15px;
+  height: 15px;
+  background: url('./assets/img/user-icon.png') no-repeat;
   background-size: 100% 100%;
   margin-right: 10px;
+}
+
+.header-user .user-text {
+  font-family: NanumPen;
 }
 
 .header-logo .logo-box {
@@ -107,24 +98,53 @@ body {
 }
 
 
-.header-bottom .header-menu {
-  width: 88px;
-  height: 90px;
-  border-right: 2px solid #F5F5F5;
+
+
+.header-bottom .header-bottom-info {
+  margin-right: 110px;
 }
 
+.header-bottom-info .bottom-info-title {
+  color: #FF7D6A;
+}
 
 .header-bottom .header-search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
   width: 88px;
   height: 90px;
   border-left: 2px solid #F5F5F5;
+}
+
+.header-bottom-left .header-dropdown {
+  margin-right: 34px;
+}
+
+.header-dropdown .down-icon {
+  display: inline;
+  width: 26px;
+  height: 26px;
+  background: url('./assets/img/arrow-down.png') no-repeat;
+  background-size: 100% 100%;
+  margin-left: 10px;
+}
+
+.header-weather .weather-icon {
+  display: inline;
+  width: 26px;
+  height: 26px;
+  background: url('./assets/img/weather.png') no-repeat;
+  background-size: 100% 100%;
+  margin-right: 10px;
 }
 
 
 .header-menu .menu-icon {
   width: 26px;
   height: 26px;
-  background: url('./assets/img/icon.png') no-repeat;
+  background: url('./assets/img/menu-icon.png') no-repeat;
   background-size: 100% 100%;
 }
 
@@ -132,7 +152,7 @@ body {
 .header-search .search-icon { 
   width: 26px;
   height: 26px;
-  background: url('./assets/img/icon.png') no-repeat;
+  background: url('./assets/img/search-icon.png') no-repeat;
   background-size: 100% 100%;
 }
 
@@ -186,15 +206,23 @@ body {
 }
 
 .recent-header .recent-icon {
-  width: 17px;
-  height: 17px;
-  background: url('./assets/img/icon.png') no-repeat;
-  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
 }
 
-.recent-new .recent-content {
-
+.recent-header .recent-icon i{
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #D8D8D8;
+  margin: 0 2px;
 }
+
+
 
 .recent-content .new-item {
   height: 120px;
@@ -232,6 +260,7 @@ body {
   line-height: 60px;
   text-align: center;
   color: #d8d8d8;
+  cursor: pointer;
 }
 
 
@@ -465,6 +494,11 @@ body {
   background-size: 100% 100%;
 }
 
+.news-item-a .news-item-comment::before {
+  background: url(./assets/img/reply-icon.png) no-repeat;
+  background-size: 100% 100%;
+}
+
 .news-ins .news-ins-number {
   height: 90px;
   font-size: 48px;
@@ -646,6 +680,22 @@ body {
   color: #B3B3B3;
   line-height: 50px;
   letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.load-more-text {
+  position: relative;
+}
+.load-more-text::after {
+  content: '';
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 26px;
+  background: url('./assets/img/load-down.png') no-repeat;
+  background-size: 100% 100%;
 }
 
 
@@ -683,6 +733,7 @@ body {
 
 .footer-top .footer-top-tag .footer-top-tag-item{
   margin-right: 36px;
+  cursor: pointer;
 }
 
 .footer-top .footer-top-link {
@@ -699,12 +750,11 @@ body {
   border-radius: 50%;
   margin: 0 10px;
   background: #FFFFFF;
-  border: 2px solid #F5F5F5;
 }
 
 .footer-top-link .footer-link-item img {
-  width: 24px;
-  height: 24px;
+  width: 50px;
+  height: 50px;
 }
 
 .life-footer .footer-bottom {
@@ -730,10 +780,11 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
+  background: url('./assets/img/share.png') no-repeat;
+  background-size: 100% 100%;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background: rgb(0, 0, 0, .3);
+  cursor: pointer;
 }
 
 
@@ -753,7 +804,8 @@ body {
     padding: 0 24px !important;
   }
   .header-bottom {
-    height: 40px;
+    height: 40px !important;
+    padding-left: 0 !important;
   }
   .header-logo .logo-top { 
     font-size: 36px;
@@ -778,30 +830,33 @@ body {
     width: 20px;
   }
   .header-top .header-phone-top-right {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     width: 20px;
     text-align: right;
   }
   .header-phone-top-left .menu-icon {
     display: inline-block;
-    width: 26px;
-    height: 26px;
-    background: url('./assets/img/icon.png') no-repeat;
+    width: 15px;
+    height: 15px;
+    background: url('./assets/img/menu-icon.png') no-repeat;
     background-size: 100% 100%;
   }
   .header-phone-top-right .search-icon{
     display: inline-block;
     width: 26px;
     height: 26px;
-    background: url('./assets/img/icon.png') no-repeat;
+    background: url('./assets/img/search-icon.png') no-repeat;
     background-size: 100% 100%;
+    margin-right: 10px;
   }
 
   .header-phone-top-right .user-icon {
     display: inline-block;
-    width: 26px;
-    height: 26px;
-    background: url('./assets/img/icon.png') no-repeat;
+    width: 15px;
+    height: 15px;
+    background: url('./assets/img/user-icon.png') no-repeat;
     background-size: 100% 100%;
   }
 
@@ -809,11 +864,13 @@ body {
 
   .header-top .header-top-left, 
   .header-top .header-top-right, 
-  .header-bottom .header-menu,
   .header-bottom .header-search,
+  .header-bottom .header-bottom-left,
+  .header-bottom .header-bottom-info,
   .header-nav .nav-icon {
     display: none;
   }
+  
 }
 
 
