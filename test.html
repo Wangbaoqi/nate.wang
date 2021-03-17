@@ -356,6 +356,36 @@
     }
 
 
+    var selectSort1 = (arr) => {
+      let min;
+
+      for (let outer = 0; outer < arr.length; outer++) {
+        min = outer
+        for (let inner = outer + 1; inner < arr.length; inner++) {
+          if(arr[inner] < arr[min]) {
+            min = inner
+          }
+        }
+        swap(arr, outer, min)
+      }
+    }
+
+
+    var insertSort1 = (arr) => {
+      let tmp, inner;
+
+      for (let outer = 1; outer < arr.length; outer++) {
+        inner = outer
+        tmp = arr[outer]
+        while(inner > 0 && arr[inner - 1] > tmp) {
+          arr[inner] = arr[inner - 1]
+          inner--
+        }
+        arr[inner] = tmp
+      }
+    }
+
+
 
   </script>
 </body>
